@@ -1,0 +1,32 @@
+2021-01-25 10:55:28.638 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-25 10:55:28.863 +05:00 [INF] Creating key {6617ae59-199b-457f-9bd8-be44c6b1d77e} with creation date 2021-01-25 05:55:28Z, activation date 2021-01-26 06:46:36Z, and expiration date 2021-04-25 05:55:28Z.
+2021-01-25 10:55:28.881 +05:00 [INF] Writing data to file 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys\key-6617ae59-199b-457f-9bd8-be44c6b1d77e.xml'.
+2021-01-25 10:55:31.679 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal176/Jumavoy?date=2021-01-24&status=1  
+2021-01-25 10:55:31.876 +05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-01-25 10:55:31.926 +05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2021-01-25 10:55:32.096 +05:00 [INF] Route matched with {action = "Jumavoy", controller = "Journal176"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Jumavoy(System.DateTime, Int32) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-25 10:55:32.986 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-25 10:55:33.008 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2021-01-25 10:55:33.025 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal176Controller.Jumavoy (CashOperationsApi) in 922.9496ms
+2021-01-25 10:55:33.029 +05:00 [INF] Request finished in 1351.33ms 401 application/json; charset=utf-8
+2021-01-25 10:55:53.869 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal176/Jumavoy?date=2021-01-24&status=1  
+2021-01-25 10:55:53.920 +05:00 [INF] Successfully validated the token.
+2021-01-25 10:55:53.922 +05:00 [INF] Route matched with {action = "Jumavoy", controller = "Journal176"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Jumavoy(System.DateTime, Int32) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-25 10:55:53.951 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-25 10:55:55.246 +05:00 [INF] Executed DbCommand (122ms) [Parameters=[:date_0='?' (DbType = Date), :status_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "f"."ID", "f"."ACCEPT", "f"."ACCEPT_DATE", "f"."DATE", "f"."DIRECTION_NUMBER", "f"."STATUS", "f"."SYSTEM_DATE", "f"."USER_ID"
+FROM "JOURNAL_16" "f"
+WHERE ((("f"."DATE" = :date_0)) AND (("f"."STATUS" = :status_1)))
+2021-01-25 10:55:55.351 +05:00 [INF] Executed DbCommand (14ms) [Parameters=[:date_0='?' (DbType = DateTime), :status_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT COUNT(*)
+FROM "JOURNAL_176" "w"
+WHERE ((("w"."DATE_16" = :date_0)) AND (("w"."STATUS" = :status_1)))
+2021-01-25 10:55:55.355 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2021-01-25 10:55:55.356 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal176Controller.Jumavoy (CashOperationsApi) in 1432.0226ms
+2021-01-25 10:55:55.358 +05:00 [INF] Request finished in 1489.072ms 200 application/json; charset=utf-8

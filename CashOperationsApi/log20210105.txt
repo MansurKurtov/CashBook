@@ -1,0 +1,75 @@
+2021-01-05 09:49:03.293 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-05 09:51:42.713 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/swagger/ui  
+2021-01-05 09:51:43.387 +05:00 [INF] Request finished in 676.5498ms 301 
+2021-01-05 09:51:43.406 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/swagger/ui/index.html  
+2021-01-05 09:51:43.443 +05:00 [INF] Request finished in 36.8383ms 200 text/html;charset=utf-8
+2021-01-05 09:51:43.489 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/swagger/ui/swagger-ui.css  
+2021-01-05 09:51:43.500 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/swagger/ui/swagger-ui-bundle.js  
+2021-01-05 09:51:43.501 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/swagger/ui/swagger-ui-standalone-preset.js  
+2021-01-05 09:51:43.561 +05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-01-05 09:51:43.561 +05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-01-05 09:51:43.561 +05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-01-05 09:51:43.568 +05:00 [INF] Request finished in 67.3573ms 200 application/javascript
+2021-01-05 09:51:43.568 +05:00 [INF] Request finished in 67.8855ms 200 application/javascript
+2021-01-05 09:51:43.568 +05:00 [INF] Request finished in 78.7054ms 200 text/css
+2021-01-05 09:51:43.875 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/swagger/v1/swagger.json  
+2021-01-05 09:51:43.905 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/swagger/ui/favicon-32x32.png  
+2021-01-05 09:51:43.908 +05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2021-01-05 09:51:43.910 +05:00 [INF] Request finished in 4.6898ms 200 image/png
+2021-01-05 09:51:44.130 +05:00 [INF] Request finished in 255.2264ms 200 application/json;charset=utf-8
+2021-01-05 09:52:29.483 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal111/GetAll?date=10-20-2020  
+2021-01-05 09:52:29.673 +05:00 [INF] Successfully validated the token.
+2021-01-05 09:52:29.706 +05:00 [INF] Route matched with {action = "GetAll", controller = "Journal111"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData GetAll(System.DateTime) on controller CashOperationsApi.Controllers.Journal111Controller (CashOperationsApi).
+2021-01-05 09:52:31.191 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-05 09:52:32.910 +05:00 [INF] Executed DbCommand (119ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select * from table(GET_JOURNAL_111(to_date('20.10.2020','DD.MM.YYYY'),837)) order by kod
+2021-01-05 09:52:45.239 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2021-01-05 09:52:45.263 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal111Controller.GetAll (CashOperationsApi) in 15549.0886ms
+2021-01-05 09:52:45.268 +05:00 [INF] Request finished in 15785.8166ms 200 application/json; charset=utf-8
+2021-01-05 09:59:34.577 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-05 09:59:52.713 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal111/GetAll?date=10-20-2020  
+2021-01-05 09:59:52.983 +05:00 [INF] Successfully validated the token.
+2021-01-05 09:59:53.175 +05:00 [INF] Route matched with {action = "GetAll", controller = "Journal111"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData GetAll(System.DateTime) on controller CashOperationsApi.Controllers.Journal111Controller (CashOperationsApi).
+2021-01-05 09:59:54.547 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-05 09:59:56.069 +05:00 [INF] Executed DbCommand (116ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select * from table(GET_JOURNAL_111(to_date('20.10.2020','DD.MM.YYYY'),837)) order by kod
+2021-01-05 10:06:09.805 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-05 10:06:14.117 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal111/GetAll?date=10-20-2020  
+2021-01-05 10:06:14.361 +05:00 [INF] Successfully validated the token.
+2021-01-05 10:06:14.549 +05:00 [INF] Route matched with {action = "GetAll", controller = "Journal111"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData GetAll(System.DateTime) on controller CashOperationsApi.Controllers.Journal111Controller (CashOperationsApi).
+2021-01-05 10:06:15.843 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-05 10:06:17.421 +05:00 [INF] Executed DbCommand (123ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select * from table(GET_JOURNAL_111(to_date('20.10.2020','DD.MM.YYYY'),837)) order by kod
+2021-01-05 10:08:55.258 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-05 10:09:53.418 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal111/GetAll?date=10-20-2020  
+2021-01-05 10:09:53.675 +05:00 [INF] Successfully validated the token.
+2021-01-05 10:09:53.873 +05:00 [INF] Route matched with {action = "GetAll", controller = "Journal111"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData GetAll(System.DateTime) on controller CashOperationsApi.Controllers.Journal111Controller (CashOperationsApi).
+2021-01-05 10:09:55.209 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-05 10:09:56.742 +05:00 [INF] Executed DbCommand (113ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select * from table(GET_JOURNAL_111(to_date('20.10.2020','DD.MM.YYYY'),837)) order by kod
+2021-01-05 10:16:10.865 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-05 10:17:03.170 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal111/GetAll?date=10-20-2020  
+2021-01-05 10:17:03.417 +05:00 [INF] Successfully validated the token.
+2021-01-05 10:17:03.612 +05:00 [INF] Route matched with {action = "GetAll", controller = "Journal111"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData GetAll(System.DateTime) on controller CashOperationsApi.Controllers.Journal111Controller (CashOperationsApi).
+2021-01-05 10:17:04.950 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-05 10:17:06.505 +05:00 [INF] Executed DbCommand (114ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select * from table(GET_JOURNAL_111(to_date('20.10.2020','DD.MM.YYYY'),837)) order by kod
+2021-01-05 10:17:06.576 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2021-01-05 10:17:06.605 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal111Controller.GetAll (CashOperationsApi) in 2985.3555ms
+2021-01-05 10:17:06.610 +05:00 [INF] Request finished in 3444.6427ms 200 application/json; charset=utf-8
+2021-01-05 10:18:58.942 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal111/GetAll?date=10-20-2020  
+2021-01-05 10:18:58.945 +05:00 [INF] Successfully validated the token.
+2021-01-05 10:18:58.947 +05:00 [INF] Route matched with {action = "GetAll", controller = "Journal111"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData GetAll(System.DateTime) on controller CashOperationsApi.Controllers.Journal111Controller (CashOperationsApi).
+2021-01-05 10:18:59.009 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-05 10:18:59.039 +05:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select * from table(GET_JOURNAL_111(to_date('20.10.2020','DD.MM.YYYY'),837)) order by kod
+2021-01-05 10:20:30.054 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-05 10:20:39.225 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal111/GetAll?date=10-20-2020  
+2021-01-05 10:20:39.484 +05:00 [INF] Successfully validated the token.
+2021-01-05 10:20:39.671 +05:00 [INF] Route matched with {action = "GetAll", controller = "Journal111"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData GetAll(System.DateTime) on controller CashOperationsApi.Controllers.Journal111Controller (CashOperationsApi).
+2021-01-05 10:20:41.085 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-05 10:20:42.643 +05:00 [INF] Executed DbCommand (110ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select * from table(GET_JOURNAL_111(to_date('20.10.2020','DD.MM.YYYY'),837)) order by kod
+2021-01-05 10:20:42.709 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2021-01-05 10:20:42.739 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal111Controller.GetAll (CashOperationsApi) in 3060.2359ms
+2021-01-05 10:20:42.744 +05:00 [INF] Request finished in 3522.756ms 200 application/json; charset=utf-8

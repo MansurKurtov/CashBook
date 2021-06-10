@@ -1,0 +1,62 @@
+2020-11-24 16:01:28.965 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-24 16:04:35.628 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-24 16:17:58.053 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-24 16:18:35.939 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/swagger/ui/index.html  
+2020-11-24 16:18:36.398 +05:00 [INF] Request finished in 461.9949ms 200 text/html;charset=utf-8
+2020-11-24 16:18:36.629 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/swagger/v1/swagger.json  
+2020-11-24 16:18:36.910 +05:00 [INF] Request finished in 280.6842ms 200 application/json;charset=utf-8
+2020-11-24 16:19:12.691 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Journal16/Add application/json 112
+2020-11-24 16:19:12.702 +05:00 [INF] CORS policy execution successful.
+2020-11-24 16:19:12.916 +05:00 [INF] Successfully validated the token.
+2020-11-24 16:19:12.949 +05:00 [INF] Route matched with {action = "Add", controller = "Journal16"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Add(Entitys.ViewModels.CashOperation.Journal16VM.Journal16PostViewModel) on controller CashOperationsApi.Controllers.Journal16Controller (CashOperationsApi).
+2020-11-24 16:19:14.442 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies 
+2020-11-24 16:19:16.100 +05:00 [INF] Executed DbCommand (110ms) [Parameters=[:p0='?' (DbType = Int32), :p1='?' (DbType = Byte), :p2='?' (DbType = DateTime), :p3='?' (DbType = Date), :p4='?' (Size = 2000), :p5='?' (DbType = Int32), :p6='?' (DbType = DateTime), :p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+
+INSERT INTO "JOURNAL_16" ("ID", "ACCEPT", "ACCEPT_DATE", "DATE", "DIRECTION_NUMBER", "STATUS", "SYSTEM_DATE", "USER_ID")
+VALUES (:p0, :p1, :p2, :p3, :p4, :p5, :p6, :p7);
+END;
+2020-11-24 16:19:16.173 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[:p0='?' (DbType = Int32), :p1='?' (DbType = Int32), :p2='?' (DbType = Int32), :p3='?' (DbType = DateTime), :p4='?' (DbType = Int32), :p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+
+INSERT INTO "EVENT_HISTORY" ("ID", "BANK_KOD", "MODULE_ID", "SYSTEM_DATE", "EVENT_TYPE", "USER_ID")
+VALUES (:p0, :p1, :p2, :p3, :p4, :p5);
+END;
+2020-11-24 16:19:16.188 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2020-11-24 16:19:16.211 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal16Controller.Add (CashOperationsApi) in 3254.8904ms
+2020-11-24 16:19:16.216 +05:00 [INF] Request finished in 3525.5885ms 200 application/json; charset=utf-8
+2020-11-24 16:19:41.659 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Journal16/Add application/json 112
+2020-11-24 16:19:41.661 +05:00 [INF] CORS policy execution successful.
+2020-11-24 16:19:41.663 +05:00 [INF] Successfully validated the token.
+2020-11-24 16:19:41.666 +05:00 [INF] Route matched with {action = "Add", controller = "Journal16"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Add(Entitys.ViewModels.CashOperation.Journal16VM.Journal16PostViewModel) on controller CashOperationsApi.Controllers.Journal16Controller (CashOperationsApi).
+2020-11-24 16:19:41.719 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies 
+2020-11-24 16:19:58.784 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[:p0='?' (DbType = Int32), :p1='?' (DbType = Byte), :p2='?' (DbType = DateTime), :p3='?' (DbType = Date), :p4='?' (Size = 2000), :p5='?' (DbType = Int32), :p6='?' (DbType = DateTime), :p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+
+INSERT INTO "JOURNAL_16" ("ID", "ACCEPT", "ACCEPT_DATE", "DATE", "DIRECTION_NUMBER", "STATUS", "SYSTEM_DATE", "USER_ID")
+VALUES (:p0, :p1, :p2, :p3, :p4, :p5, :p6, :p7);
+END;
+2020-11-24 17:16:38.522 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-24 17:16:45.215 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Journal16/Add application/json 112
+2020-11-24 17:16:45.226 +05:00 [INF] CORS policy execution successful.
+2020-11-24 17:16:46.382 +05:00 [INF] Successfully validated the token.
+2020-11-24 17:16:46.844 +05:00 [INF] Route matched with {action = "Add", controller = "Journal16"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Add(Entitys.ViewModels.CashOperation.Journal16VM.Journal16PostViewModel) on controller CashOperationsApi.Controllers.Journal16Controller (CashOperationsApi).
+2020-11-24 17:16:50.488 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies 
+2020-11-24 17:16:54.618 +05:00 [ERR] Journal16Api/Add
+2020-11-24 17:16:54.724 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2020-11-24 17:16:54.822 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal16Controller.Add (CashOperationsApi) in 7959.8307ms
+2020-11-24 17:16:54.856 +05:00 [INF] Request finished in 9645.1966ms 400 application/json; charset=utf-8
+2020-11-24 17:17:17.749 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Journal16/Add application/json 112
+2020-11-24 17:17:17.758 +05:00 [INF] CORS policy execution successful.
+2020-11-24 17:17:17.761 +05:00 [INF] Successfully validated the token.
+2020-11-24 17:17:17.764 +05:00 [INF] Route matched with {action = "Add", controller = "Journal16"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Add(Entitys.ViewModels.CashOperation.Journal16VM.Journal16PostViewModel) on controller CashOperationsApi.Controllers.Journal16Controller (CashOperationsApi).
+2020-11-24 17:17:17.808 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies 
+2020-11-24 17:19:22.671 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-24 17:19:25.342 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Journal16/Add application/json 112
+2020-11-24 17:19:25.354 +05:00 [INF] CORS policy execution successful.
+2020-11-24 17:19:25.627 +05:00 [INF] Successfully validated the token.
+2020-11-24 17:19:25.845 +05:00 [INF] Route matched with {action = "Add", controller = "Journal16"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Add(Entitys.ViewModels.CashOperation.Journal16VM.Journal16PostViewModel) on controller CashOperationsApi.Controllers.Journal16Controller (CashOperationsApi).
+2020-11-24 17:19:27.369 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies 
+2020-11-24 17:19:46.907 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2020-11-24 17:19:46.936 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal16Controller.Add (CashOperationsApi) in 21081.3143ms
+2020-11-24 17:19:46.944 +05:00 [INF] Request finished in 21606.8276ms 200 application/json; charset=utf-8

@@ -1,0 +1,372 @@
+2021-01-22 09:22:10.786 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 09:22:47.531 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal176/GetByDate?date=2021-01-19  
+2021-01-22 09:22:47.732 +05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-01-22 09:22:47.778 +05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2021-01-22 09:22:47.942 +05:00 [INF] Route matched with {action = "GetByDate", controller = "Journal176"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData GetByDate(System.DateTime) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-22 09:22:48.824 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 09:22:48.849 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2021-01-22 09:22:48.865 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal176Controller.GetByDate (CashOperationsApi) in 916.4566ms
+2021-01-22 09:22:48.870 +05:00 [INF] Request finished in 1341.213ms 401 application/json; charset=utf-8
+2021-01-22 09:23:03.252 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal176/GetByDate?date=2021-01-19  
+2021-01-22 09:23:03.282 +05:00 [INF] Successfully validated the token.
+2021-01-22 09:23:03.285 +05:00 [INF] Route matched with {action = "GetByDate", controller = "Journal176"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData GetByDate(System.DateTime) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-22 09:23:03.316 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 09:23:03.444 +05:00 [WRN] The Include operation for navigation '[f].CounterCashierModel' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2021-01-22 09:23:04.720 +05:00 [INF] Executed DbCommand (88ms) [Parameters=[:date_0='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='0']
+SELECT "f"."ID", "f"."DATE", "f"."BAG_NUMBER" "BagNumber", "f"."SUMMA", "f"."LACK_SUMMA" "LackSumma", "f"."WORTHLESS_SUMMA" "WorthlessSumma", "f"."RECEIPT_COUNT" "ReceiptCount", "f"."RECEIPT_SUMMA" "ReceiptSumma", "f"."COMMENT", "f"."USER_ID" "UserId", "f"."COUNTER_CASHIER_ID" "CounterCashierId", CASE
+    WHEN "f"."COUNTER_CASHIER_ID" IS NOT NULL
+    THEN "f.CounterCashierModel"."NAME" ELSE NULL
+END "CounterCashierName", "f"."EXCESS_SUMMA" "ExcessSumma", "f"."REAL_TIME" "RealTime", "f"."STATUS", "f"."FAKE_SUMMA" "FakeSumma", "f"."DATE_16" "Date16", "f"."SPR_OBJECT_ID" "SprObjectId"
+FROM "JOURNAL_176" "f"
+LEFT JOIN "COUNTER_CASHIER" "f.CounterCashierModel" ON ("f"."COUNTER_CASHIER_ID" = "f.CounterCashierModel"."ID")
+WHERE ("f"."DATE" = :date_0)
+2021-01-22 09:23:04.762 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2021-01-22 09:23:04.777 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal176Controller.GetByDate (CashOperationsApi) in 1489.5693ms
+2021-01-22 09:23:04.779 +05:00 [INF] Request finished in 1526.564ms 200 application/json; charset=utf-8
+2021-01-22 10:24:50.515 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 10:24:57.676 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal176/GetByDate?date=2021-01-19  
+2021-01-22 10:24:57.824 +05:00 [INF] Successfully validated the token.
+2021-01-22 10:24:57.928 +05:00 [INF] Route matched with {action = "GetByDate", controller = "Journal176"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData GetByDate(System.DateTime) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-22 10:24:58.657 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 10:24:59.793 +05:00 [INF] Executed DbCommand (89ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select * from table(GET_VALUT_ALL)
+2021-01-22 10:24:59.868 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2021-01-22 10:24:59.882 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal176Controller.GetByDate (CashOperationsApi) in 1949.3087ms
+2021-01-22 10:24:59.886 +05:00 [INF] Request finished in 2212.8838ms 400 application/json; charset=utf-8
+2021-01-22 10:25:51.333 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 10:25:55.083 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal176/GetByDate?date=2021-01-19  
+2021-01-22 10:25:55.224 +05:00 [INF] Successfully validated the token.
+2021-01-22 10:25:55.325 +05:00 [INF] Route matched with {action = "GetByDate", controller = "Journal176"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData GetByDate(System.DateTime) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-22 10:25:56.037 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 10:25:57.216 +05:00 [INF] Executed DbCommand (92ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select * from table(GET_VALUT_ALL)
+2021-01-22 10:25:57.285 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2021-01-22 10:25:57.298 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal176Controller.GetByDate (CashOperationsApi) in 1967.2421ms
+2021-01-22 10:25:57.302 +05:00 [INF] Request finished in 2221.199ms 400 application/json; charset=utf-8
+2021-01-22 10:26:25.846 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 10:26:37.881 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal176/GetByDate?date=2021-01-19  
+2021-01-22 10:26:38.140 +05:00 [INF] Successfully validated the token.
+2021-01-22 10:26:38.324 +05:00 [INF] Route matched with {action = "GetByDate", controller = "Journal176"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData GetByDate(System.DateTime) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-22 10:26:39.394 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 10:26:39.470 +05:00 [INF] Executing action method CashOperationsApi.Controllers.Journal176Controller.GetByDate (CashOperationsApi) - Validation state: "Valid"
+2021-01-22 10:26:40.616 +05:00 [INF] Executed DbCommand (98ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select * from table(GET_VALUT_ALL)
+2021-01-22 10:28:50.650 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 10:28:53.371 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal176/GetByDate?date=2021-01-19  
+2021-01-22 10:28:53.508 +05:00 [INF] Successfully validated the token.
+2021-01-22 10:28:53.610 +05:00 [INF] Route matched with {action = "GetByDate", controller = "Journal176"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData GetByDate(System.DateTime) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-22 10:28:54.318 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 10:28:55.324 +05:00 [INF] Executed DbCommand (88ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select * from table(GET_VALUT_ALL)
+2021-01-22 10:28:55.413 +05:00 [WRN] The Include operation for navigation '[f].CounterCashierModel' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2021-01-22 10:28:55.466 +05:00 [WRN] The LINQ expression 'where ([w].Kod == [f].SprObjectId)' could not be translated and will be evaluated locally.
+2021-01-22 10:28:55.472 +05:00 [WRN] The LINQ expression 'FirstOrDefault()' could not be translated and will be evaluated locally.
+2021-01-22 10:28:55.475 +05:00 [WRN] The LINQ expression 'where ([w].Kod == [f].SprObjectId)' could not be translated and will be evaluated locally.
+2021-01-22 10:28:55.476 +05:00 [WRN] The LINQ expression 'FirstOrDefault()' could not be translated and will be evaluated locally.
+2021-01-22 10:28:55.535 +05:00 [INF] Executed DbCommand (18ms) [Parameters=[:date_0='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='0']
+SELECT "f"."ID", "f"."DATE", "f"."BAG_NUMBER" "BagNumber", "f"."SUMMA", "f"."LACK_SUMMA" "LackSumma", "f"."WORTHLESS_SUMMA" "WorthlessSumma", "f"."RECEIPT_COUNT" "ReceiptCount", "f"."RECEIPT_SUMMA" "ReceiptSumma", "f"."COMMENT", "f"."USER_ID" "UserId", "f"."COUNTER_CASHIER_ID" "CounterCashierId", CASE
+    WHEN "f"."COUNTER_CASHIER_ID" IS NOT NULL
+    THEN "f.CounterCashierModel"."NAME" ELSE NULL
+END "CounterCashierName", "f"."EXCESS_SUMMA" "ExcessSumma", "f"."REAL_TIME" "RealTime", "f"."STATUS", "f"."FAKE_SUMMA" "FakeSumma", "f"."DATE_16" "Date16", "f"."SPR_OBJECT_ID" "SprObjectId"
+FROM "JOURNAL_176" "f"
+LEFT JOIN "COUNTER_CASHIER" "f.CounterCashierModel" ON ("f"."COUNTER_CASHIER_ID" = "f.CounterCashierModel"."ID")
+WHERE ("f"."DATE" = :date_0)
+2021-01-22 10:28:55.556 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2021-01-22 10:28:55.579 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal176Controller.GetByDate (CashOperationsApi) in 1961.0258ms
+2021-01-22 10:28:55.583 +05:00 [INF] Request finished in 2214.564ms 200 application/json; charset=utf-8
+2021-01-22 11:23:52.552 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 11:29:58.369 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Journal176/ExportToExcel? application/json 887
+2021-01-22 11:29:58.514 +05:00 [INF] Successfully validated the token.
+2021-01-22 11:29:58.626 +05:00 [INF] Route matched with {action = "ExportToExcel", controller = "Journal176"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.FileContentResult] ExportToExcel(System.Collections.Generic.List`1[Entitys.Models.ExcelModelForJournal176]) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-22 11:29:59.306 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 11:30:00.813 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal176Controller.ExportToExcel (CashOperationsApi) in 2180.0351ms
+2021-01-22 11:30:00.818 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at AccountingCashTransactionsService.Services.Journal176Service.ToExport(List`1 model, String user, Int32 bankCode) in D:\Projects\CashBook\AccountingCashTransactionsService\Services\Journal176Service.cs:line 503
+   at CashOperationsApi.Controllers.Journal176Controller.ExportToExcel(List`1 model) in D:\Projects\CashBook\CashOperationsApi\Controllers\Journal176Controller.cs:line 169
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-01-22 11:30:00.863 +05:00 [INF] Request finished in 2496.4373ms 500 text/plain
+2021-01-22 11:30:59.648 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Journal176/ExportToExcel application/json 887
+2021-01-22 11:30:59.653 +05:00 [INF] Successfully validated the token.
+2021-01-22 11:30:59.654 +05:00 [INF] Route matched with {action = "ExportToExcel", controller = "Journal176"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.FileContentResult] ExportToExcel(System.Collections.Generic.List`1[Entitys.Models.ExcelModelForJournal176]) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-22 11:30:59.683 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 11:30:59.717 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal176Controller.ExportToExcel (CashOperationsApi) in 60.3953ms
+2021-01-22 11:30:59.719 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at AccountingCashTransactionsService.Services.Journal176Service.ToExport(List`1 model, String user, Int32 bankCode) in D:\Projects\CashBook\AccountingCashTransactionsService\Services\Journal176Service.cs:line 503
+   at CashOperationsApi.Controllers.Journal176Controller.ExportToExcel(List`1 model) in D:\Projects\CashBook\CashOperationsApi\Controllers\Journal176Controller.cs:line 169
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-01-22 11:30:59.732 +05:00 [INF] Request finished in 84.3142ms 500 text/plain
+2021-01-22 11:32:56.823 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 11:33:14.768 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 11:33:22.433 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Journal176/ExportToExcel application/json 887
+2021-01-22 11:33:22.656 +05:00 [INF] Successfully validated the token.
+2021-01-22 11:33:22.831 +05:00 [INF] Route matched with {action = "ExportToExcel", controller = "Journal176"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.FileContentResult] ExportToExcel(System.Collections.Generic.List`1[Entitys.Models.ExcelModelForJournal176]) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-22 11:33:23.975 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 11:33:24.081 +05:00 [INF] Executing action method CashOperationsApi.Controllers.Journal176Controller.ExportToExcel (CashOperationsApi) - Validation state: "Valid"
+2021-01-22 11:35:37.091 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 11:35:43.470 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Journal176/ExportToExcel application/json 887
+2021-01-22 11:35:43.624 +05:00 [INF] Successfully validated the token.
+2021-01-22 11:35:43.739 +05:00 [INF] Route matched with {action = "ExportToExcel", controller = "Journal176"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.FileContentResult] ExportToExcel(System.Collections.Generic.List`1[Entitys.Models.ExcelModelForJournal176]) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-22 11:35:44.423 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 11:35:45.705 +05:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileContentResult, sending file with download name '2021-01-22-11-35-45Journal176.xlsx' ...
+2021-01-22 11:35:45.717 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal176Controller.ExportToExcel (CashOperationsApi) in 1971.5956ms
+2021-01-22 11:35:45.722 +05:00 [INF] Request finished in 2254.2637ms 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+2021-01-22 15:37:30.189 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 15:38:14.721 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal176/Jumavoy?date=2021-01-19&status=1  
+2021-01-22 15:38:14.864 +05:00 [INF] Successfully validated the token.
+2021-01-22 15:38:14.964 +05:00 [INF] Route matched with {action = "Jumavoy", controller = "Journal176"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Jumavoy(System.DateTime, Int32) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-22 15:38:15.680 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 15:38:16.930 +05:00 [INF] Executed DbCommand (122ms) [Parameters=[:date_0='?' (DbType = Date), :status_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "f"."ID", "f"."ACCEPT", "f"."ACCEPT_DATE", "f"."DATE", "f"."DIRECTION_NUMBER", "f"."STATUS", "f"."SYSTEM_DATE", "f"."USER_ID"
+FROM "JOURNAL_16" "f"
+WHERE ((("f"."DATE" = :date_0)) AND (("f"."STATUS" = :status_1)))
+2021-01-22 15:38:17.086 +05:00 [INF] Executed DbCommand (32ms) [Parameters=[:FirstOrDefault_AcceptDate_2='?' (DbType = DateTime), :date_0='?' (DbType = DateTime), :status_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "w"."SPR_OBJECT_ID" "SprObjectId", SUM("w"."SUMMA") "TotalSumma", SUM("w"."LACK_SUMMA") "TotalLackSumma", SUM("w"."WORTHLESS_SUMMA") "TotalWorthlessSumma", SUM("w"."EXCESS_SUMMA") "TotalExcessSumma", SUM("w"."FAKE_SUMMA") "TotalFakeSumma", :FirstOrDefault_AcceptDate_2 "AcceptDate"
+FROM "JOURNAL_176" "w"
+WHERE ((("w"."DATE_16" = :date_0)) AND (("w"."STATUS" = :status_1)))
+GROUP BY "w"."SPR_OBJECT_ID"
+2021-01-22 15:38:17.107 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2021-01-22 15:38:17.127 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal176Controller.Jumavoy (CashOperationsApi) in 2156.8646ms
+2021-01-22 15:38:17.131 +05:00 [INF] Request finished in 2412.7111ms 200 application/json; charset=utf-8
+2021-01-22 15:40:48.208 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 15:40:54.827 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal176/Jumavoy?date=2021-01-19&status=1  
+2021-01-22 15:40:54.974 +05:00 [INF] Successfully validated the token.
+2021-01-22 15:40:55.076 +05:00 [INF] Route matched with {action = "Jumavoy", controller = "Journal176"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Jumavoy(System.DateTime, Int32) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-22 15:40:55.758 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 15:40:56.704 +05:00 [INF] Executed DbCommand (89ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select * from table(GET_VALUT_ALL)
+2021-01-22 15:40:56.835 +05:00 [INF] Executed DbCommand (34ms) [Parameters=[:date_0='?' (DbType = Date), :status_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "f"."ID", "f"."ACCEPT", "f"."ACCEPT_DATE", "f"."DATE", "f"."DIRECTION_NUMBER", "f"."STATUS", "f"."SYSTEM_DATE", "f"."USER_ID"
+FROM "JOURNAL_16" "f"
+WHERE ((("f"."DATE" = :date_0)) AND (("f"."STATUS" = :status_1)))
+2021-01-22 15:40:56.921 +05:00 [WRN] The LINQ expression 'where ([w].Kod == [s].Key)' could not be translated and will be evaluated locally.
+2021-01-22 15:40:56.925 +05:00 [WRN] The LINQ expression 'FirstOrDefault()' could not be translated and will be evaluated locally.
+2021-01-22 15:40:56.926 +05:00 [WRN] The LINQ expression 'where ([w].Kod == [s].Key)' could not be translated and will be evaluated locally.
+2021-01-22 15:40:56.927 +05:00 [WRN] The LINQ expression 'FirstOrDefault()' could not be translated and will be evaluated locally.
+2021-01-22 15:40:56.936 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2021-01-22 15:40:56.949 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal176Controller.Jumavoy (CashOperationsApi) in 1866.4675ms
+2021-01-22 15:40:56.953 +05:00 [INF] Request finished in 2128.2221ms 400 application/json; charset=utf-8
+2021-01-22 15:43:16.611 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 15:43:21.625 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal176/Jumavoy?date=2021-01-19&status=1  
+2021-01-22 15:43:21.774 +05:00 [INF] Successfully validated the token.
+2021-01-22 15:43:21.878 +05:00 [INF] Route matched with {action = "Jumavoy", controller = "Journal176"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Jumavoy(System.DateTime, Int32) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-22 15:43:22.588 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 15:43:23.636 +05:00 [INF] Executed DbCommand (113ms) [Parameters=[:date_0='?' (DbType = Date), :status_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "f"."ID", "f"."ACCEPT", "f"."ACCEPT_DATE", "f"."DATE", "f"."DIRECTION_NUMBER", "f"."STATUS", "f"."SYSTEM_DATE", "f"."USER_ID"
+FROM "JOURNAL_16" "f"
+WHERE ((("f"."DATE" = :date_0)) AND (("f"."STATUS" = :status_1)))
+2021-01-22 15:43:23.776 +05:00 [INF] Executed DbCommand (15ms) [Parameters=[:FirstOrDefault_AcceptDate_2='?' (DbType = DateTime), :date_0='?' (DbType = DateTime), :status_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "w"."SPR_OBJECT_ID" "SprObjectId", SUM("w"."SUMMA") "TotalSumma", SUM("w"."LACK_SUMMA") "TotalLackSumma", SUM("w"."WORTHLESS_SUMMA") "TotalWorthlessSumma", SUM("w"."EXCESS_SUMMA") "TotalExcessSumma", SUM("w"."FAKE_SUMMA") "TotalFakeSumma", :FirstOrDefault_AcceptDate_2 "AcceptDate"
+FROM "JOURNAL_176" "w"
+WHERE ((("w"."DATE_16" = :date_0)) AND (("w"."STATUS" = :status_1)))
+GROUP BY "w"."SPR_OBJECT_ID"
+2021-01-22 15:43:23.817 +05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select * from table(GET_VALUT_ALL)
+2021-01-22 15:43:23.835 +05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select * from table(GET_VALUT_ALL)
+2021-01-22 15:43:23.840 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2021-01-22 15:43:23.860 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal176Controller.Jumavoy (CashOperationsApi) in 1976.5102ms
+2021-01-22 15:43:23.865 +05:00 [INF] Request finished in 2241.9126ms 200 application/json; charset=utf-8
+2021-01-22 16:34:39.496 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 16:34:45.293 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Journal16/ExportToExcel application/json 1145
+2021-01-22 16:34:45.444 +05:00 [INF] Successfully validated the token.
+2021-01-22 16:34:45.557 +05:00 [INF] Route matched with {action = "ExportToExcel", controller = "Journal16"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.FileContentResult] ExportToExcel(System.Collections.Generic.List`1[Entitys.Models.ExcelModelForJournal16]) on controller CashOperationsApi.Controllers.Journal16Controller (CashOperationsApi).
+2021-01-22 16:34:46.233 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 16:34:47.417 +05:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileContentResult, sending file with download name '2021-01-22-16-34-47Journal16.xlsx' ...
+2021-01-22 16:34:47.428 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal16Controller.ExportToExcel (CashOperationsApi) in 1864.6522ms
+2021-01-22 16:34:47.433 +05:00 [INF] Request finished in 2143.0236ms 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+2021-01-22 16:37:47.879 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 16:37:56.216 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Journal16/ExportToExcel application/json 1145
+2021-01-22 16:37:56.353 +05:00 [INF] Successfully validated the token.
+2021-01-22 16:37:56.459 +05:00 [INF] Route matched with {action = "ExportToExcel", controller = "Journal16"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.FileContentResult] ExportToExcel(System.Collections.Generic.List`1[Entitys.Models.ExcelModelForJournal16]) on controller CashOperationsApi.Controllers.Journal16Controller (CashOperationsApi).
+2021-01-22 16:37:57.172 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 16:37:58.242 +05:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileContentResult, sending file with download name '2021-01-22-16-37-58Journal16.xlsx' ...
+2021-01-22 16:37:58.254 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal16Controller.ExportToExcel (CashOperationsApi) in 1788.3212ms
+2021-01-22 16:37:58.260 +05:00 [INF] Request finished in 2045.7698ms 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+2021-01-22 16:40:35.313 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 16:40:52.743 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Journal16/ExportToExcel application/json 1145
+2021-01-22 16:40:52.880 +05:00 [INF] Successfully validated the token.
+2021-01-22 16:40:52.985 +05:00 [INF] Route matched with {action = "ExportToExcel", controller = "Journal16"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.FileContentResult] ExportToExcel(System.Collections.Generic.List`1[Entitys.Models.ExcelModelForJournal16]) on controller CashOperationsApi.Controllers.Journal16Controller (CashOperationsApi).
+2021-01-22 16:40:53.710 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 16:40:54.970 +05:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileContentResult, sending file with download name '2021-01-22-16-40-54Journal16.xlsx' ...
+2021-01-22 16:40:54.981 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal16Controller.ExportToExcel (CashOperationsApi) in 1987.3728ms
+2021-01-22 16:40:54.988 +05:00 [INF] Request finished in 2246.3293ms 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+2021-01-22 16:44:14.435 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 16:44:19.083 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Journal16/ExportToExcel application/json 1145
+2021-01-22 16:44:19.226 +05:00 [INF] Successfully validated the token.
+2021-01-22 16:44:19.332 +05:00 [INF] Route matched with {action = "ExportToExcel", controller = "Journal16"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.FileContentResult] ExportToExcel(System.Collections.Generic.List`1[Entitys.Models.ExcelModelForJournal16]) on controller CashOperationsApi.Controllers.Journal16Controller (CashOperationsApi).
+2021-01-22 16:44:20.055 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 16:44:21.453 +05:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileContentResult, sending file with download name '2021-01-22-16-44-21Journal18.xlsx' ...
+2021-01-22 16:44:21.465 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal16Controller.ExportToExcel (CashOperationsApi) in 2126.3245ms
+2021-01-22 16:44:21.470 +05:00 [INF] Request finished in 2389.8044ms 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+2021-01-22 16:45:10.342 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 16:45:14.844 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Journal16/ExportToExcel application/json 1145
+2021-01-22 16:45:14.992 +05:00 [INF] Successfully validated the token.
+2021-01-22 16:45:15.107 +05:00 [INF] Route matched with {action = "ExportToExcel", controller = "Journal16"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.FileContentResult] ExportToExcel(System.Collections.Generic.List`1[Entitys.Models.ExcelModelForJournal16]) on controller CashOperationsApi.Controllers.Journal16Controller (CashOperationsApi).
+2021-01-22 16:45:15.793 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 16:45:16.881 +05:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileContentResult, sending file with download name '2021-01-22-16-45-16Journal18.xlsx' ...
+2021-01-22 16:45:16.891 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal16Controller.ExportToExcel (CashOperationsApi) in 1777.3118ms
+2021-01-22 16:45:16.896 +05:00 [INF] Request finished in 2055.6972ms 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+2021-01-22 16:48:21.056 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 16:48:23.562 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Journal16/ExportToExcel application/json 1145
+2021-01-22 16:48:23.698 +05:00 [INF] Successfully validated the token.
+2021-01-22 16:48:23.803 +05:00 [INF] Route matched with {action = "ExportToExcel", controller = "Journal16"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.FileContentResult] ExportToExcel(System.Collections.Generic.List`1[Entitys.Models.ExcelModelForJournal16]) on controller CashOperationsApi.Controllers.Journal16Controller (CashOperationsApi).
+2021-01-22 16:48:24.534 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 16:48:25.805 +05:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileContentResult, sending file with download name '2021-01-22-16-48-25Journal18.xlsx' ...
+2021-01-22 16:48:25.817 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal16Controller.ExportToExcel (CashOperationsApi) in 2006.9486ms
+2021-01-22 16:48:25.823 +05:00 [INF] Request finished in 2264.1333ms 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+2021-01-22 17:49:20.577 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 17:49:27.766 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal176/Jumavoy?date=2021-01-19&status=1  
+2021-01-22 17:49:27.902 +05:00 [INF] Successfully validated the token.
+2021-01-22 17:49:28.004 +05:00 [INF] Route matched with {action = "Jumavoy", controller = "Journal176"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Jumavoy(System.DateTime, Int32) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-22 17:49:28.738 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 17:49:29.862 +05:00 [INF] Executed DbCommand (106ms) [Parameters=[:date_0='?' (DbType = Date), :status_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "f"."ID", "f"."ACCEPT", "f"."ACCEPT_DATE", "f"."DATE", "f"."DIRECTION_NUMBER", "f"."STATUS", "f"."SYSTEM_DATE", "f"."USER_ID"
+FROM "JOURNAL_16" "f"
+WHERE ((("f"."DATE" = :date_0)) AND (("f"."STATUS" = :status_1)))
+2021-01-22 17:49:30.001 +05:00 [INF] Executed DbCommand (16ms) [Parameters=[:FirstOrDefault_AcceptDate_2='?' (DbType = DateTime), :date_0='?' (DbType = DateTime), :status_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "w"."SPR_OBJECT_ID" "SprObjectId", SUM("w"."SUMMA") "TotalSumma", SUM("w"."LACK_SUMMA") "TotalLackSumma", SUM("w"."WORTHLESS_SUMMA") "TotalWorthlessSumma", SUM("w"."EXCESS_SUMMA") "TotalExcessSumma", SUM("w"."FAKE_SUMMA") "TotalFakeSumma", :FirstOrDefault_AcceptDate_2 "AcceptDate"
+FROM "JOURNAL_176" "w"
+WHERE ((("w"."DATE_16" = :date_0)) AND (("w"."STATUS" = :status_1)))
+GROUP BY "w"."SPR_OBJECT_ID"
+2021-01-22 17:49:30.114 +05:00 [INF] Executed DbCommand (78ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select * from table(GET_VALUT_ALL)
+2021-01-22 17:49:30.132 +05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select * from table(GET_VALUT_ALL)
+2021-01-22 17:49:30.137 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2021-01-22 17:49:30.157 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal176Controller.Jumavoy (CashOperationsApi) in 2146.6417ms
+2021-01-22 17:49:30.161 +05:00 [INF] Request finished in 2397.7112ms 200 application/json; charset=utf-8
+2021-01-22 18:01:20.939 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 18:01:23.943 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal176/Jumavoy?date=2021-01-22&status=1  
+2021-01-22 18:01:24.093 +05:00 [INF] Successfully validated the token.
+2021-01-22 18:01:24.204 +05:00 [INF] Route matched with {action = "Jumavoy", controller = "Journal176"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Jumavoy(System.DateTime, Int32) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-22 18:01:24.891 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 18:01:26.122 +05:00 [INF] Executed DbCommand (101ms) [Parameters=[:date_0='?' (DbType = Date), :status_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "f"."ID", "f"."ACCEPT", "f"."ACCEPT_DATE", "f"."DATE", "f"."DIRECTION_NUMBER", "f"."STATUS", "f"."SYSTEM_DATE", "f"."USER_ID"
+FROM "JOURNAL_16" "f"
+WHERE ((("f"."DATE" = :date_0)) AND (("f"."STATUS" = :status_1)))
+2021-01-22 18:01:26.179 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2021-01-22 18:01:26.192 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal176Controller.Jumavoy (CashOperationsApi) in 1981.319ms
+2021-01-22 18:01:26.197 +05:00 [INF] Request finished in 2255.85ms 400 application/json; charset=utf-8
+2021-01-22 18:01:47.278 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 18:01:49.779 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal176/Jumavoy?date=2021-01-22&status=1  
+2021-01-22 18:01:49.993 +05:00 [INF] Successfully validated the token.
+2021-01-22 18:01:50.152 +05:00 [INF] Route matched with {action = "Jumavoy", controller = "Journal176"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Jumavoy(System.DateTime, Int32) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-22 18:01:51.200 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 18:01:51.274 +05:00 [INF] Executing action method CashOperationsApi.Controllers.Journal176Controller.Jumavoy (CashOperationsApi) - Validation state: "Valid"
+2021-01-22 18:01:58.983 +05:00 [INF] Executed DbCommand (114ms) [Parameters=[:date_0='?' (DbType = Date), :status_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "f"."ID", "f"."ACCEPT", "f"."ACCEPT_DATE", "f"."DATE", "f"."DIRECTION_NUMBER", "f"."STATUS", "f"."SYSTEM_DATE", "f"."USER_ID"
+FROM "JOURNAL_16" "f"
+WHERE ((("f"."DATE" = :date_0)) AND (("f"."STATUS" = :status_1)))
+2021-01-22 18:06:16.813 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 18:06:19.208 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal176/Jumavoy?date=2021-01-22&status=1  
+2021-01-22 18:06:19.356 +05:00 [INF] Successfully validated the token.
+2021-01-22 18:06:19.458 +05:00 [INF] Route matched with {action = "Jumavoy", controller = "Journal176"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Jumavoy(System.DateTime, Int32) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-22 18:06:20.172 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 18:06:21.466 +05:00 [INF] Executed DbCommand (101ms) [Parameters=[:date_0='?' (DbType = Date), :status_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "f"."ID", "f"."ACCEPT", "f"."ACCEPT_DATE", "f"."DATE", "f"."DIRECTION_NUMBER", "f"."STATUS", "f"."SYSTEM_DATE", "f"."USER_ID"
+FROM "JOURNAL_16" "f"
+WHERE ((("f"."DATE" = :date_0)) AND (("f"."STATUS" = :status_1)))
+2021-01-22 18:06:21.499 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2021-01-22 18:06:21.511 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal176Controller.Jumavoy (CashOperationsApi) in 2047.7657ms
+2021-01-22 18:06:21.515 +05:00 [INF] Request finished in 2309.3175ms 400 application/json; charset=utf-8
+2021-01-22 18:06:52.546 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 18:06:54.293 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal176/Jumavoy?date=2021-01-22&status=1  
+2021-01-22 18:06:54.499 +05:00 [INF] Successfully validated the token.
+2021-01-22 18:06:54.654 +05:00 [INF] Route matched with {action = "Jumavoy", controller = "Journal176"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Jumavoy(System.DateTime, Int32) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-22 18:06:55.732 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 18:06:55.805 +05:00 [INF] Executing action method CashOperationsApi.Controllers.Journal176Controller.Jumavoy (CashOperationsApi) - Validation state: "Valid"
+2021-01-22 18:06:57.055 +05:00 [INF] Executed DbCommand (106ms) [Parameters=[:date_0='?' (DbType = Date), :status_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "f"."ID", "f"."ACCEPT", "f"."ACCEPT_DATE", "f"."DATE", "f"."DIRECTION_NUMBER", "f"."STATUS", "f"."SYSTEM_DATE", "f"."USER_ID"
+FROM "JOURNAL_16" "f"
+WHERE ((("f"."DATE" = :date_0)) AND (("f"."STATUS" = :status_1)))
+2021-01-22 18:07:18.594 +05:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT "j"."ID", "j"."BAG_NUMBER", "j"."COMMENT", "j"."COUNTER_CASHIER_ID", "j"."DATE", "j"."DATE_16", "j"."EXCESS_SUMMA", "j"."FAKE_SUMMA", "j"."LACK_SUMMA", "j"."REAL_TIME", "j"."RECEIPT_COUNT", "j"."RECEIPT_SUMMA", "j"."SPR_OBJECT_ID", "j"."STATUS", "j"."SUMMA", "j"."USER_ID", "j"."WORTHLESS_SUMMA"
+FROM "JOURNAL_176" "j"
+2021-01-22 18:07:27.289 +05:00 [INF] Executed DbCommand (14ms) [Parameters=[:get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "e"."ID", "e"."ACTIVE", "e"."BANK_KOD", "e"."NAME"
+FROM "COUNTER_CASHIER" "e"
+WHERE ("e"."ID" = :get_Item_0)
+2021-01-22 18:08:06.345 +05:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT "j"."ID", "j"."BAG_NUMBER", "j"."COMMENT", "j"."COUNTER_CASHIER_ID", "j"."DATE", "j"."DATE_16", "j"."EXCESS_SUMMA", "j"."FAKE_SUMMA", "j"."LACK_SUMMA", "j"."REAL_TIME", "j"."RECEIPT_COUNT", "j"."RECEIPT_SUMMA", "j"."SPR_OBJECT_ID", "j"."STATUS", "j"."SUMMA", "j"."USER_ID", "j"."WORTHLESS_SUMMA"
+FROM "JOURNAL_176" "j"
+2021-01-22 18:09:59.057 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 18:10:00.098 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal176/Jumavoy?date=2021-01-22&status=1  
+2021-01-22 18:10:00.320 +05:00 [INF] Successfully validated the token.
+2021-01-22 18:10:00.481 +05:00 [INF] Route matched with {action = "Jumavoy", controller = "Journal176"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Jumavoy(System.DateTime, Int32) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-22 18:10:01.544 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 18:10:02.843 +05:00 [INF] Executed DbCommand (108ms) [Parameters=[:date_0='?' (DbType = Date), :status_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "f"."ID", "f"."ACCEPT", "f"."ACCEPT_DATE", "f"."DATE", "f"."DIRECTION_NUMBER", "f"."STATUS", "f"."SYSTEM_DATE", "f"."USER_ID"
+FROM "JOURNAL_16" "f"
+WHERE ((("f"."DATE" = :date_0)) AND (("f"."STATUS" = :status_1)))
+2021-01-22 18:10:09.295 +05:00 [INF] Executed DbCommand (14ms) [Parameters=[:date_0='?' (DbType = DateTime), :status_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "w"."ID", "w"."BAG_NUMBER", "w"."COMMENT", "w"."COUNTER_CASHIER_ID", "w"."DATE", "w"."DATE_16", "w"."EXCESS_SUMMA", "w"."FAKE_SUMMA", "w"."LACK_SUMMA", "w"."REAL_TIME", "w"."RECEIPT_COUNT", "w"."RECEIPT_SUMMA", "w"."SPR_OBJECT_ID", "w"."STATUS", "w"."SUMMA", "w"."USER_ID", "w"."WORTHLESS_SUMMA"
+FROM "JOURNAL_176" "w"
+WHERE ((("w"."DATE_16" = :date_0)) AND (("w"."STATUS" = :status_1)))
+2021-01-22 18:10:59.984 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 18:11:02.467 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/api/Journal176/Jumavoy?date=2021-01-22&status=1  
+2021-01-22 18:11:02.613 +05:00 [INF] Successfully validated the token.
+2021-01-22 18:11:02.712 +05:00 [INF] Route matched with {action = "Jumavoy", controller = "Journal176"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Jumavoy(System.DateTime, Int32) on controller CashOperationsApi.Controllers.Journal176Controller (CashOperationsApi).
+2021-01-22 18:11:03.416 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 18:11:04.463 +05:00 [INF] Executed DbCommand (108ms) [Parameters=[:date_0='?' (DbType = Date), :status_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "f"."ID", "f"."ACCEPT", "f"."ACCEPT_DATE", "f"."DATE", "f"."DIRECTION_NUMBER", "f"."STATUS", "f"."SYSTEM_DATE", "f"."USER_ID"
+FROM "JOURNAL_16" "f"
+WHERE ((("f"."DATE" = :date_0)) AND (("f"."STATUS" = :status_1)))
+2021-01-22 18:11:04.539 +05:00 [INF] Executed DbCommand (21ms) [Parameters=[:date_0='?' (DbType = DateTime), :status_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT COUNT(*)
+FROM "JOURNAL_176" "w"
+WHERE ((("w"."DATE_16" = :date_0)) AND (("w"."STATUS" = :status_1)))
+2021-01-22 18:11:04.550 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2021-01-22 18:11:04.561 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal176Controller.Jumavoy (CashOperationsApi) in 1842.3445ms
+2021-01-22 18:11:04.565 +05:00 [INF] Request finished in 2099.3435ms 200 application/json; charset=utf-8
+2021-01-22 18:48:42.229 +05:00 [INF] User profile is available. Using 'C:\Users\togaev_a\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-01-22 18:49:35.291 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Journal16/SecondExportToExcel application/json 906
+2021-01-22 18:49:35.431 +05:00 [INF] Successfully validated the token.
+2021-01-22 18:49:35.537 +05:00 [INF] Route matched with {action = "SecondExportToExcel", controller = "Journal16"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.FileContentResult] SecondExportToExcel(System.Collections.Generic.List`1[Entitys.Models.ExcelModelForJournal16Second]) on controller CashOperationsApi.Controllers.Journal16Controller (CashOperationsApi).
+2021-01-22 18:49:36.292 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2021-01-22 18:49:36.585 +05:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileContentResult, sending file with download name '2021-01-22-18-49-36Journal16.xlsx' ...
+2021-01-22 18:49:36.597 +05:00 [INF] Executed action CashOperationsApi.Controllers.Journal16Controller.SecondExportToExcel (CashOperationsApi) in 1053.3055ms
+2021-01-22 18:49:36.601 +05:00 [INF] Request finished in 1313.5825ms 200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet

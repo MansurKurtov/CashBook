@@ -1,0 +1,3910 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Entitys</name>
+    </assembly>
+    <members>
+        <member name="M:Entitys.DB.DataContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            bazaga malumoti bilan migratsiya qilish
+            </summary>
+            <param name="modelBuilder"></param>
+        </member>
+        <member name="M:Entitys.Helper.ExcelAround.ExcelAroundBorder.AroundBorder(OfficeOpenXml.ExcelWorksheet,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ws"></param>
+            <param name="s"></param>
+            <param name="d"></param>
+        </member>
+        <member name="M:Entitys.Helper.ExcelAround.ExcelAroundBorder.AroundBorder(OfficeOpenXml.ExcelWorksheet,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ws"></param>
+            <param name="s"></param>
+        </member>
+        <member name="M:Entitys.Helper.ExcelAround.ExcelAroundBorder.Book171Helper(OfficeOpenXml.ExcelWorksheet,System.Int32,Entitys.Models.Book171Excel,System.String[],System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="ws"></param>
+            <param name="column"></param>
+            <param name="model"></param>
+            <param name="s1"></param>
+            <param name="count"></param>
+        </member>
+        <member name="M:Entitys.Helper.ExcelAround.ExcelAroundBorder.ExcelWidth(OfficeOpenXml.ExcelWorksheet,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="ws"></param>
+            <param name="columnName"></param>
+            <param name="columnCount"></param>
+        </member>
+        <member name="T:Entitys.Helper.ExcelAround.ExcelAroundBorder.Excel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Helper.ExcelAround.ExcelAroundBorder.Excel.ColumnCount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Helper.ExcelAround.ExcelAroundBorder.Excel.ColumnName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthModules.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthModules.Name">
+            <summary>
+            Номи
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthModules.Remark">
+            <summary>
+            Изоҳ
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthModules.ParentId">
+            <summary>
+            Тегишли модул
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthPermissions.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthPermissions.Name">
+            <summary>
+            Номи
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthPermissions.PermissionName">
+            <summary>
+            Permission
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthPermissions.PermissionCode">
+            <summary>
+            Permission
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthPermissions.ModulId">
+            <summary>
+            Тегишли модул
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthPermissions.DisplayOrder">
+            <summary>
+            Display order
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthPermissions.RelatedUielementCodes">
+            <summary>
+            Permission га тегишли UI element кодлар
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthPermissions.RelatedPermissionCodes">
+            <summary>
+            Permission га тегишли permission кодлар
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthPermissions.Comment">
+            <summary>
+            Изоҳ
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthRolePermissions.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthRolePermissions.RoleId">
+            <summary>
+            Рол коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthRolePermissions.PermissionId">
+            <summary>
+            Модул коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthRoles.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthRoles.Name">
+            <summary>
+            Номи
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthRoles.Comment">
+            <summary>
+            Изоҳ
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthRoles.CreatedBy">
+            <summary>
+            Яратган фойдаланувчи
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthRoles.Created">
+            <summary>
+            Яратилган сана
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthRoles.StructureId">
+            <summary>
+            Ташкилот коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthStructurePermission.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthStructurePermission.StructureId">
+            <summary>
+            Структура коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthStructurePermission.PermissionCodes">
+            <summary>
+            Permission кодлар
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthStructurePermission.UIelementCodes">
+            <summary>
+            Permission кодлар
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUIElements.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUIElements.ElementCode">
+            <summary>
+            Объектнинг қисқача коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUIElements.Comment">
+            <summary>
+            Изоҳ
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUserPermissions.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUserPermissions.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUserPermissions.PermissionId">
+            <summary>
+            Модул коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUserRole.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUserRole.RoleId">
+            <summary>
+            Рол кодиdasd 
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUserRole.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUserRTokens.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUserRTokens.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUserRTokens.RefreshToken">
+            <summary>
+            Refresh token
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUserRTokens.ClientId">
+            <summary>
+            Клиент коди(броузер, мобил)
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUserRTokens.Created">
+            <summary>
+            Яратилган сана
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUserRTokens.Updated">
+            <summary>
+            Токен янгиланган вакт
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUsers.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUsers.UserName">
+            <summary>
+            Фойдаланувчи логини
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUsers.Salt">
+            <summary>
+            Парол учун салт
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUsers.LastName">
+            <summary>
+            Фамилия
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUsers.FirstName">
+            <summary>
+            Исми
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUsers.MiddleName">
+            <summary>
+            Отасининг исми
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUsers.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUsers.Telefon">
+            <summary>
+            Telefon
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUsers.IsAdmin">
+            <summary>
+            Тизим админ
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUsers.IsMain">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUsers.Active">
+            <summary>
+            Актив
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUsers.Created">
+            <summary>
+            Яратилган сана
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUsers.CreatedBy">
+            <summary>
+            Яратган фойдаланувчи
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUsers.OrgId">
+            <summary>
+            Ташкилот коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUsers.Password">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUsers.StructureId">
+            <summary>
+            Структура коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUsers.RefStructureModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUsers.CashierTypeId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.AuthUsers.IsLogged">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Entitys.Models.Auth.FirstSaldoProcedureResult">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Auth.FirstSaldoProcedureResult.RESULT_ROWS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book121QueryModel.SymbolName">
+            <summary>
+            Symbol nomi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book121QueryModel.SaldoBeginSoni">
+            <summary>
+            Soni
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book121QueryModel.SaldoBeginSumma">
+            <summary>
+            Summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book121QueryModel.KirimSoni">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book121QueryModel.KirimSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book121QueryModel.ChiqimSoni">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book121QueryModel.ChiqimSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book121QueryModel.SaldoEndSoni">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book121QueryModel.SaldoEndSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book171QueryModel.Account">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book171QueryModel.AccountShort">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book171QueryModel.Name">
+            <summary>
+            Symbol nomi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book171QueryModel.SaldoBeginSoni">
+            <summary>
+            Soni
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book171QueryModel.SaldoBeginSumma">
+            <summary>
+            Summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book171QueryModel.KirimSoni">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book171QueryModel.KirimSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book171QueryModel.ChiqimSoni">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book171QueryModel.ChiqimSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book171QueryModel.SaldoEndSoni">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book171QueryModel.SaldoEndSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book121Excel.Date">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book121Excel.SymbolName">
+            <summary>
+            Symbol nomi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book121Excel.SaldoBeginSumma">
+            <summary>
+            Summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book121Excel.KirimSoni">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book121Excel.KirimSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book121Excel.ChiqimSoni">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book121Excel.ChiqimSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book121Excel.SaldoEndSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book121Excel.BoshKassir">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book171Excel.Date">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book171Excel.Account">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book171Excel.Name">
+            <summary>
+            Symbol nomi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book171Excel.SaldoBeginSumma">
+            <summary>
+            Summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book171Excel.KirimSoni">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book171Excel.KirimSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book171Excel.ChiqimSoni">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book171Excel.ChiqimSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book171Excel.SaldoEndSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Book171Excel.BoshKassir">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book120.Id">
+            <summary>
+            Yozuv kodi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book120.Date">
+            <summary>
+            Sana
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book120.SaldoBeginCount">
+            <summary>
+            Kun boshidagi saldo
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book120.IncomeCount">
+            <summary>
+            Kirim
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book120.OutgoCount">
+            <summary>
+            Chiqim
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book120.SaldoEndCount">
+            <summary>
+            Kun oxiridagi saldo
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book120.BankCode">
+            <summary>
+            Bank kodi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book120.IncomeSumma">
+            <summary>
+            Kirim summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book120.OutgoSumma">
+            <summary>
+            Chiqim summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book120.SaldoBeginSumma">
+            <summary>
+            Kun boshidagi saldo summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book120.SaldoEndSumma">
+            <summary>
+            Kun oxiridagi saldo summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book121.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book121.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book121.SaldoBeginCount">
+            <summary>
+            Кун бошидаги сальдо
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book121.InComeCount">
+            <summary>
+            Кирим
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book121.OutGoCount">
+            <summary>
+            Чиқим
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book121.SaldoEndCount">
+            <summary>
+            Кун охиридаги сальдо
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book121.KodValut">
+            <summary>
+            Валюта коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book121.BankCode">
+            <summary>
+            Bank kodi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book121.IncomeSumma">
+            <summary>
+            Kirim summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book121.OutgoSumma">
+            <summary>
+            Chiqim summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book121.SaldoBeginSumma">
+            <summary>
+            Kun boshidagi saldo summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book121.SaldoEndSumma">
+            <summary>
+            Kun oxiridagi saldo summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141.SaldoBeginCount">
+            <summary>
+            Кун бошидаги сальдо
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141.InComeCount">
+            <summary>
+            Кирим
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141.OutGoCount">
+            <summary>
+            Чиқим
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141.SaldoEndCount">
+            <summary>
+            Кун охиридаги сальдо
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141.BankCode">
+            <summary>
+            Bank kodi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141.IncomeSumma">
+            <summary>
+            Kirim summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141.OutgoSumma">
+            <summary>
+            Chiqim summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141.SaldoBeginSumma">
+            <summary>
+            Kun boshidagi saldo summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141.SaldoEndSumma">
+            <summary>
+            Kun oxiridagi saldo summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141A.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141A.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141A.SaldoBeginCount">
+            <summary>
+            Кун бошидаги сальдо
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141A.InComeCount">
+            <summary>
+            Кирим
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141A.OutGoCount">
+            <summary>
+            Чиқим
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141A.SaldoEndCount">
+            <summary>
+            Кун охиридаги сальдо
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141A.BankCode">
+            <summary>
+            Bank kodi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141A.IncomeSumma">
+            <summary>
+            Kirim summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141A.OutgoSumma">
+            <summary>
+            Chiqim summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141A.SaldoBeginSumma">
+            <summary>
+            Kun boshidagi saldo summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book141A.SaldoEndSumma">
+            <summary>
+            Kun oxiridagi saldo summasi
+            </summary>
+        </member>
+        <member name="T:Entitys.Models.CashOperation.Book155">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book155.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book155.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book155.FromCashierId">
+            <summary>
+            Кассир коди(топширадиган)
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book155.ToCashierId">
+            <summary>
+            Кассир коди(қабул қиладиган)
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book155.CashValue">
+            <summary>
+            Қиймати
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book155.Accept">
+            <summary>
+            Олдим
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book155.OperationId">
+            <summary>
+            Номинал тури
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book155.SprObjectId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book155.WorthAccount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book155.SystemDate">
+            <summary>
+            Sistema vaqti
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book155.CounterCashierId">
+            <summary>
+            Сановчи кассир коди
+            </summary>        
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book155.From175">
+            <summary>
+            Қайта санаш кассасиданми
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book171.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book171.Date">
+            <summary>
+            Sana
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book171.SaldoBeginCount">
+            <summary>
+            Kun boshidagi saldo
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book171.IncomeCount">
+            <summary>
+            Kirim
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book171.OutgoCount">
+            <summary>
+            Chiqim
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book171.SaldoEndCount">
+            <summary>
+            Kun oxiridagi saldo
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book171.AccountCode">
+            <summary>
+            Hisob raqam kodi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book171.IncomeSumma">
+            <summary>
+            Kirim summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book171.OutgoSumma">
+            <summary>
+            Chiqim summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book171.BankCode">
+            <summary>
+            Bank kodi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book171.SaldoBeginSumma">
+            <summary>
+            Kun boshidagi saldo summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book171.SaldoEndSumma">
+            <summary>
+            Kun oxiridagi saldo summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book175.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book175.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book175.FromCasheirId">
+            <summary>
+            Кассир коди(топширадиган)
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book175.ToCashierId">
+            <summary>
+            Кассир коди(қабул қиладиган)
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book175.CashValue">
+            <summary>
+            Қиймати
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book175.Accept">
+            <summary>
+            Олдим
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Book175.OperationId">
+            <summary>
+            Номинал тури
+            </summary>
+        </member>
+        <member name="T:Entitys.Models.CashOperation.ChiefaccountantTable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.ChiefaccountantTable.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.ChiefaccountantTable.FIO">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.ChiefaccountantTable.BankKod">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.ChiefaccountantTable.CreatedUserId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.ChiefaccountantTable.CreateDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.ChiefaccountantTable.UpdatedUserId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.ChiefaccountantTable.UpdateDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Entitys.Models.CashOperation.Collector">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Collector.Id">
+            <summary>
+            Yozuv kodi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Collector.Journal16Id">
+            <summary>
+            Йўналиш рақами
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Collector.Book16Model">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Collector.Fio">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Collector.SystemDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Entitys.Models.CashOperation.CounterCashier">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.CounterCashier.Id">
+            <summary>
+            Yozuv kodi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.CounterCashier.Name">
+            <summary>
+            Nomi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.CounterCashier.BankCode">
+            <summary>
+            Bank kodi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.CounterCashier.Active">
+            <summary>
+            faolligi
+            </summary>
+        </member>
+        <member name="T:Entitys.Models.CashOperation.Journal109">
+            <summary>
+            Кирим касса айланмаси
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109.SymbolName">
+            <summary>
+            Symbol nomi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109.Count">
+            <summary>
+            Soni
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109.Summa">
+            <summary>
+            Summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109.UserId">
+            <summary>
+            Foydalanuvchi Idisi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109.Date">
+            <summary>
+            Sana
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109.BankCode">
+            <summary>
+            Bank kodi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109.SymbolCode">
+            <summary>
+            Simvol kodi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109Val.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109Val.SymbolName">
+            <summary>
+            Символ номи
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109Val.Count">
+            <summary>
+            Сони
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109Val.Summa">
+            <summary>
+            Сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109Val.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109Val.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109Val.BankKod">
+            <summary>
+            Банк коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109Val.SymbolKod">
+            <summary>
+            Символ коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109Val.Fio">
+            <summary>
+            ФИО
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109Val.ValutKod">
+             <summary>
+            Валюта коди
+             </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109Val.ValutName">
+             <summary>
+            Валюта номи
+             </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109Worth.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109Worth.SymbolName">
+            <summary>
+            Символ номи
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109Worth.Count">
+            <summary>
+            Сони
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109Worth.Summa">
+            <summary>
+            Сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109Worth.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109Worth.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109Worth.BankKod">
+            <summary>
+            Банк коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109Worth.SymbolKod">
+            <summary>
+            Символ коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal109Worth.Fio">
+            <summary>
+            ФИО
+            </summary>
+        </member>
+        <member name="T:Entitys.Models.CashOperation.Journal110">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110.SymbolName">
+            <summary>
+            Символ номи
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110.Count">
+            <summary>
+            Сони
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110.Summa">
+            <summary>
+            Сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110.BankCode">
+            <summary>
+            Bank kodi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110.SymbolCode">
+            <summary>
+            Simvol kodi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110.Fio">
+            <summary>
+            ФИО
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110Val.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110Val.SymbolName">
+            <summary>
+            Символ номи
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110Val.Count">
+            <summary>
+            Сони
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110Val.Summa">
+            <summary>
+            Сумма   
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110Val.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110Val.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110Val.BankKod">
+            <summary>
+            Банк коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110Val.SymbolKod">
+            <summary>
+            Символ коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110Val.Fio">
+            <summary>
+            ФИО 
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110Val.ValutKod">
+            <summary>
+            Валюта коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110Val.ValutName">
+            <summary>
+            Валюта номи
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110Worth.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110Worth.SymbolName">
+            <summary>
+            Символ номи
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110Worth.Count">
+            <summary>
+            Сони
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110Worth.Summa">
+            <summary>
+            Сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110Worth.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110Worth.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110Worth.BankKod">
+            <summary>
+            Банк коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110Worth.SymbolKod">
+            <summary>
+            Символ коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal110Worth.Fio">
+            <summary>
+            ФИО
+            </summary>
+        </member>
+        <member name="T:Entitys.Models.CashOperation.Journal111">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal111.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal111.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal111.BankKod">
+            <summary>
+            Банк коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal111.OperKod">
+            <summary>
+            Ички саралаш учун махсус сон
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal111.Count">
+            <summary>
+             Сони
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal111.Summa">
+             <summary>
+            Сумма
+             </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal111.OperName">
+            <summary>
+            Ички саралаш учун махсус сўз
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal111.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="T:Entitys.Models.CashOperation.Journal15">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal15.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal15.Journal16Id">
+            <summary>
+            Йўналиш рақами
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal15.Book16Model">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal15.Summa">
+            <summary>
+            Сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal15.Description">
+            <summary>
+            Изоҳ
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal15.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal15.BagsNumber">
+            <summary>
+            Қоп раками
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal15.IsEmpty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal15.SystemDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Entitys.Models.CashOperation.Journal16">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal16.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal16.DirectionNumber">
+             <summary>
+            Йўналиш рақами 
+             </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal16.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal16.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal16.SystemDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Entitys.Models.CashOperation.Journal176">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal176.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal176.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal176.BagNumber">
+            <summary>
+            Қоп рақами
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal176.Summa">
+            <summary>
+            Сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal176.LackSumma">
+            <summary>
+            Камомад сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal176.WorthlessSumma">
+            <summary>
+            Яроқсиз сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal176.ReceiptCount">
+            <summary>
+            Чеклар сони
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal176.ReceiptSumma">
+            <summary>
+            Чеклар суммаси
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal176.Comment">
+            <summary>
+            Изоҳ
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal176.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal176.CounterCashierId">
+            <summary>
+            Сановчи кассир
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal176.CounterCashierModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal176.ExcessSumma">
+            <summary>
+            Ортиқча сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal176.RealTime">
+            <summary>
+            Сервер вақти
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal176.Status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Journal176.Date16">
+            <summary>
+            Журнал - 16 даги сана
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Reports.IsUser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Reports.Kod">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Reports.Fio">
+            <summary>
+            Soni
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Reports.Name">
+            <summary>
+            Symbol nomi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.Reports.Summa">
+            <summary>
+            Summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.ReportsViewModel.IsUser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.ReportsViewModel.Kod">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.ReportsViewModel.Fio">
+            <summary>
+            Soni
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.ReportsViewModel.Name">
+            <summary>
+            Symbol nomi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.ReportsViewModel.Summa">
+            <summary>
+            Summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.ReportsViewModel.Date">
+            <summary>
+            Date
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.GetReport1Summs.Isuser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.GetReport1Summs.CashierId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.GetReport1Summs.Summa">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.GetReport2CurrencyCashiers.Isuser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.GetReport2CurrencyCashiers.CashierId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.GetReport2CurrencyCashiers.Fio">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.GetReport2CurrencyCashiers.Position">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.GetReport2CurrencySumms.Isuser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.GetReport2CurrencySumms.CashierId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.GetReport2CurrencySumms.CurrencyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.GetReport2CurrencySumms.Summa">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.GetReport2Currency.Isuser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.GetReport2Currency.CashierId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.GetReport2Currency.CashierFio">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.GetReport2Currency.CurrencyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.GetReport2Currency.CurrencyName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.SupervisingAccountant.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.SupervisingAccountant.Fio">
+            <summary>
+            FIO
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.SupervisingAccountant.BankCode">
+            <summary>
+            Bank kodi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.SupervisingAccountant.CreatedUserId">
+            <summary>
+            Yozuvni qo'shgan foydalanuvchi nomi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.SupervisingAccountant.CreatedDate">
+            <summary>
+            Yozuv qo'shilgan vaqt
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.SupervisingAccountant.UpdatedUserId">
+            <summary>
+            O'gartirgan foydalanuvchi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.CashOperation.SupervisingAccountant.UpdateDate">
+            <summary>
+            O'zgartirilgan vaqti
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Enums.CashierType.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Enums.CashierType.Name">
+            <summary>
+            Наименование
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Enums.EntOperations155.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Enums.EntOperations155.Name">
+            <summary>
+            Наименование
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Enums.InOut.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Enums.InOut.Name">
+            <summary>
+            Наименование
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Enums.ModifiedBookSaldos.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Enums.ModifiedBookSaldos.Name">
+            <summary>
+            Наименование
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Main.EntOrg.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Main.EntOrg.Name">
+            <summary>
+            Номи
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Main.EntOrg.ShortName">
+            <summary>
+            Қисқа номи
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Main.EntOrg.Address">
+            <summary>
+            Манзил
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Main.EntOrg.Phone">
+            <summary>
+            Телефон
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Main.EntOrg.Email">
+            <summary>
+            Эл. Почта
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Main.EntOrg.WebSite">
+            <summary>
+            Вебсайт
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Main.EntOrg.Inn">
+            <summary>
+            ИНН номер
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Main.EntOrg.Okonh">
+            <summary>
+            ОКОНХ
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Main.EntOrg.Oked">
+            <summary>
+            ОКЭД
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Main.EntOrg.Region">
+            <summary>
+             Вилоят коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Main.EntOrg.District">
+            <summary>
+            Туман коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Main.EntOrg.AddInfo">
+            <summary>
+            Қўшимча маълумот
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Main.EntOrg.ParentId">
+            <summary>
+            Юқори ташкилот коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Models.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.QueryModel.SymbolName">
+            <summary>
+            Symbol nomi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.QueryModel.Count">
+            <summary>
+            Soni
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.QueryModel.Summa">
+            <summary>
+            Summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.QueryModelForJournal111.SymbolName">
+            <summary>
+            Symbol nomi
+            </summary>        
+        </member>
+        <member name="P:Entitys.Models.QueryModelForJournal111.Count">
+            <summary>
+            Soni
+            </summary>        
+        </member>
+        <member name="P:Entitys.Models.QueryModelForJournal111.Summa">
+            <summary>
+            Summasi
+            </summary>        
+        </member>
+        <member name="P:Entitys.Models.QueryModelForJournal111.OrignText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.QueryModels.Name">
+            <summary>
+            Symbol nomi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.QueryModels.Count">
+            <summary>
+            Soni
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.QueryModels.Summa">
+            <summary>
+            Summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModel.Date">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModel.Kod">
+            <summary>
+            Symbol nomi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModel.SymbolName">
+            <summary>
+            Symbol nomi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModel.Count">
+            <summary>
+            Soni
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModel.Summa">
+            <summary>
+            Summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModel.BoshKassir">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModel.Fio">
+            <summary>
+            Fio
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.QueryModelFor109Worth.Name">
+            <summary>
+            Symbol nomi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.QueryModelFor109Worth.Fio">
+            <summary>
+            FIO
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.QueryModelFor109Worth.Count">
+            <summary>
+            Soni
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.QueryModelFor109Worth.Summa">
+            <summary>
+            Summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Journal109ValQueryModel.SymbolName">
+            <summary>
+            Symbol nomi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Journal109ValQueryModel.ValutKod">
+            <summary>
+            Valyuta kodi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Journal109ValQueryModel.ValutName">
+            <summary>
+            Valyuta nomi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Journal109ValQueryModel.Fio">
+            <summary>
+            FIO
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Journal109ValQueryModel.Count">
+            <summary>
+            Soni
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Journal109ValQueryModel.Summa">
+            <summary>
+            Summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Journal110ValQueryModel.SymbolName">
+            <summary>
+            Symbol nomi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Journal110ValQueryModel.ValutKod">
+            <summary>
+            Valyuta kodi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Journal110ValQueryModel.ValutName">
+            <summary>
+            Valyuta nomi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Journal110ValQueryModel.Fio">
+            <summary>
+            FIO
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Journal110ValQueryModel.Count">
+            <summary>
+            Soni
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Journal110ValQueryModel.Summa">
+            <summary>
+            Summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForBook141.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForBook141.Date">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForBook141.Name">
+            <summary>
+            Symbol nomi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForBook141.Count">
+            <summary>
+            Soni
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForBook141.Summa">
+            <summary>
+            Summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelFor123Froms.Date">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelFor123Froms.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelFor123Froms.Count">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelFor123Froms.Value">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelFor123Froms.Summa">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelFor123Froms.Target">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelFor123Froms.Fio">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelFor123Froms.Journal123Fio">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModel111.Date">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModel111.SymbolName">
+            <summary>
+            Symbol nomi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModel111.Count">
+            <summary>
+            Soni
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModel111.Summa">
+            <summary>
+            Summasi
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal16.BankName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal16.DirectionNumber">
+             <summary>
+            Йўналиш рақами 
+             </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal16.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal16.CollectorName">
+            <summary>
+            Инкассация ФИО лари
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal16.BagsCount">
+            <summary>
+            Қоплар сони
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal16.Summa">
+            <summary>
+            Сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal16.SuperVisorName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal16.AcceptDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal16.CashierName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal16.Summauz">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal16Second.AcceptDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal16Second.TotalLackSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal16Second.TotalWorthlessSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal16Second.TotalFakeSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal16Second.TotalExcessSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal16Second.TotalSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal16Second.MainAccounterName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal176.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal176.BagNumber">
+            <summary>
+            Қоп рақами
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal176.Summa">
+            <summary>
+            Сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal176.LackSumma">
+            <summary>
+            Камомад сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal176.WorthlessSumma">
+            <summary>
+            Яроқсиз сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal176.ReceiptCount">
+            <summary>
+            Чеклар сони
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal176.ReceiptSumma">
+            <summary>
+            Чеклар суммаси
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal176.Comment">
+            <summary>
+            Изоҳ
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal176.CounterCashierName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal176.ExcessSumma">
+            <summary>
+            Ортиқча сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.ExcelModelForJournal176.BoshKassir">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Reference.RefCountry.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Reference.RefCountry.Name">
+            <summary>
+            Номи
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Reference.RefCountry.Code">
+            <summary>
+            Қисқача коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Reference.RefCountry.DisplayOrder">
+            <summary>
+            Display order
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Reference.RefDistrict.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Reference.RefDistrict.Name">
+            <summary>
+            Номи
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Reference.RefDistrict.ShortName">
+            <summary>
+            Қисқача коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Reference.RefDistrict.DisplayOrder">
+            <summary>
+            Display order
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Reference.RefDistrict.RegionId">
+            <summary>
+            Қайси ҳудудга тегишли
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Reference.RefRegion.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Reference.RefRegion.Name">
+            <summary>
+            Номи
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Reference.RefRegion.ShortName">
+            <summary>
+            Қисқача коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Reference.RefRegion.DisplayOrder">
+            <summary>
+            Display order
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Reference.RefRegion.CountryId">
+            <summary>
+            Қайси ҳудудга тегишли
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Reference.RefStructure.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Reference.RefStructure.Name">
+            <summary>
+            Объектнинг қисқача коди
+            </summary>
+        </member>
+        <member name="P:Entitys.Models.Reference.RefStructure.Comment">
+            <summary>
+            Изоҳ
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.Auth.RolePermissionPostModel.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.Auth.RolePermissionPostModel.RoleId">
+            <summary>
+            Рол коди
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.Auth.RolePermissionPostModel.PermissionId">
+            <summary>
+            Модул коди
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.CashOperations.Book155Model.CashierId">
+            <summary>
+            Кассир коди(қабул қиладиган)
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.CashOperations.Book155Model.Date">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.CashOperations.Book155Model.CashValue">
+            <summary>
+            Қиймати
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.CashOperations.Book155Model.OperationId">
+            <summary>
+            Номинал тури
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.CashOperations.Book155Model.SprObjectId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.CashOperations.Book155Model.WorthAccount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.CashOperations.Book155Model.CounterCashierId">
+            <summary>
+            Сановчи кассир коди
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.CashOperations.Book155Model.From175">
+            <summary>
+            Қайта санаш кассасиданми
+            </summary>
+        </member>
+        <member name="T:Entitys.PostModels.CashOperations.Journal109Model">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Entitys.PostModels.UserPostModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.UserPostModel.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.UserPostModel.Login">
+            <summary>
+            Фойдаланувчи логини
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.UserPostModel.Password">
+            <summary>
+            Parol
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.UserPostModel.FirstName">
+            <summary>
+            First name
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.UserPostModel.LastName">
+            <summary>
+            Last name
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.UserPostModel.MiddleName">
+            <summary>
+            Middle name
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.UserPostModel.PhoneNumber">
+            <summary>
+            Telefon
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.UserPostModel.BankId">
+            <summary>
+            Bank kodi
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.UserPostModel.Active">
+            <summary>
+            Status
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.UserPostModel.IsAdmin">
+            <summary>
+            Administratormi?
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.UserPostModel.CashierTypeId">
+            <summary>
+            kassir tipi idisi
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.UserPostModel.PermissionIds">
+            <summary>
+            Permission Idlar
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.UserChangePasswordModel.OldPassword">
+            <summary>
+            Old password
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.UserChangePasswordModel.NewPassword">
+            <summary>
+            New password
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.PostModels.UserRecoverPasswordModel.NewPassword">
+            <summary>
+            New password
+            
+            </summary>
+        </member>
+        <member name="T:Entitys.ViewModels.Auth.InsertUserViewModel">
+            <summary>
+            User insert qilinganda qaytadigan Response Model
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.InsertUserViewModel.Id">
+            <summary>
+            Foydalanuvchi Idisi
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.InsertUserViewModel.BankName">
+            <summary>
+            User banki nomlanishi
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.InsertUserViewModel.CashierTypeName">
+            <summary>
+            Kassir tipi nomlanishi
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.InsertUserViewModel.PermissionIds">
+            <summary>
+            Userga biriktirilgan Permission Idlar
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.InsertUserViewModel.PermissionNames">
+            <summary>
+            Userga biriktirilgan Permission nomlari
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.RolePermissionViewModel.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.RolePermissionViewModel.RoleId">
+            <summary>
+            Рол коди
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Entitys.ViewModels.Auth.RolePermissionViewModel.RoleName" -->
+        <member name="P:Entitys.ViewModels.Auth.RolePermissionViewModel.PermissionName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.RoleViewModel.Name">
+            <summary>
+            Номи
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.RoleViewModel.Comment">
+            <summary>
+            Изоҳ
+            </summary>
+        </member>
+        <member name="T:Entitys.ViewModels.Auth.UserPermissionViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.UserPermissionViewModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.UserPermissionViewModel.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.UserRoleViewModel.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.UserRoleViewModel.RoleId">
+            <summary>
+            Рол коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.UserRoleViewModel.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="T:Entitys.ViewModels.Auth.UserViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.UserViewModel.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.UserViewModel.Login">
+            <summary>
+            Фойдаланувчи логини
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.UserViewModel.FirstName">
+            <summary>
+            First name
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.UserViewModel.LastName">
+            <summary>
+            Last name
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.UserViewModel.MiddleName">
+            <summary>
+            Middle name
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.UserViewModel.PhoneNumber">
+            <summary>
+            Telefon
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.UserViewModel.BankId">
+            <summary>
+            Bank kodi
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.UserViewModel.BankName">
+            <summary>
+            Bank nomi
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.UserViewModel.Active">
+            <summary>
+            Status
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.UserViewModel.IsAdmin">
+            <summary>
+            Adminmi?
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.UserViewModel.CashierTypeId">
+            <summary>
+            kassir tipi idisi
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.UserViewModel.CashierTypeName">
+            <summary>
+            Kassir tipi
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.UserViewModel.PermissionIds">
+            <summary>
+            Permission Idlar
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Auth.UserViewModel.PermissionNames">
+            <summary>
+            Permission nomlari
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book110.Book110PostViewModel.SymbolName">
+            <summary>
+            Символ номи
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book110.Book110PostViewModel.Count">
+            <summary>
+            Сони
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book110.Book110PostViewModel.Summa">
+            <summary>
+            Сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book110.Book110PostViewModel.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book110.Book110PostViewModel.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book110.Book110PutViewModel.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book110.Book110PutViewModel.SymbolName">
+            <summary>
+            Символ номи
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book110.Book110PutViewModel.Count">
+            <summary>
+            Сони
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book110.Book110PutViewModel.Summa">
+            <summary>
+            Сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book110.Book110PutViewModel.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book110.Book110PutViewModel.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book110.Book110ViewModel.SymbolName">
+            <summary>
+            Символ номи
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book110.Book110ViewModel.Count">
+            <summary>
+            Сони
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book110.Book110ViewModel.Summa">
+            <summary>
+            Сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book110.Book110ViewModel.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book110.Book110ViewModel.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book110.Book110ViewModel.BankCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book110.Book110ViewModel.SymbolCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141AViewModel.Book141APostViewModel.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141AViewModel.Book141APostViewModel.SaldoBegin">
+            <summary>
+            Кун бошидаги сальдо
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141AViewModel.Book141APostViewModel.InCome">
+            <summary>
+            Кирим
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141AViewModel.Book141APostViewModel.OutGo">
+            <summary>
+            Чиқим
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141AViewModel.Book141APostViewModel.SaldoEnd">
+            <summary>
+            Кун охиридаги сальдо
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141AViewModel.Book141APutViewModel.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141AViewModel.Book141APutViewModel.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141AViewModel.Book141APutViewModel.SaldoBegin">
+            <summary>
+            Кун бошидаги сальдо
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141AViewModel.Book141APutViewModel.InCome">
+            <summary>
+            Кирим
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141AViewModel.Book141APutViewModel.OutGo">
+            <summary>
+            Чиқим
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141AViewModel.Book141APutViewModel.SaldoEnd">
+            <summary>
+            Кун охиридаги сальдо
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141AViewModel.Book141AViewModel.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141AViewModel.Book141AViewModel.SaldoBegin">
+            <summary>
+            Кун бошидаги сальдо
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141AViewModel.Book141AViewModel.InCome">
+            <summary>
+            Кирим
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141AViewModel.Book141AViewModel.OutGo">
+            <summary>
+            Чиқим
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141AViewModel.Book141AViewModel.SaldoEnd">
+            <summary>
+            Кун охиридаги сальдо
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141ViewModel.Book141PostViewModel.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141ViewModel.Book141PostViewModel.SaldoBegin">
+            <summary>
+            Кун бошидаги сальдо
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141ViewModel.Book141PostViewModel.InCome">
+            <summary>
+            Кирим
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141ViewModel.Book141PostViewModel.OutGo">
+            <summary>
+            Чиқим
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141ViewModel.Book141PostViewModel.SaldoEnd">
+            <summary>
+            Кун охиридаги сальдо
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141ViewModel.Book141PutViewModel.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141ViewModel.Book141PutViewModel.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141ViewModel.Book141PutViewModel.SaldoBegin">
+            <summary>
+            Кун бошидаги сальдо
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141ViewModel.Book141PutViewModel.InCome">
+            <summary>
+            Кирим
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141ViewModel.Book141PutViewModel.OutGo">
+            <summary>
+            Чиқим
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141ViewModel.Book141PutViewModel.SaldoEnd">
+            <summary>
+            Кун охиридаги сальдо
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141ViewModel.Book141ViewModel.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141ViewModel.Book141ViewModel.SaldoBegin">
+            <summary>
+            Кун бошидаги сальдо
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141ViewModel.Book141ViewModel.InCome">
+            <summary>
+            Кирим
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141ViewModel.Book141ViewModel.OutGo">
+            <summary>
+            Чиқим
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book141ViewModel.Book141ViewModel.SaldoEnd">
+            <summary>
+            Кун охиридаги сальдо
+            </summary>
+        </member>
+        <member name="T:Entitys.ViewModels.CashOperation.Book155.AcceptanceViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book155.AcceptanceViewModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book155.AcceptanceViewModel.IsAccept">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book155.Book155PutViewModel.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book155.Book155PutViewModel.CashierId">
+            <summary>
+            Кассир коди(қабул қиладиган)
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book155.Book155PutViewModel.CashValue">
+            <summary>
+            Қиймати
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book155.Book155PutViewModel.OperationId">
+            <summary>
+            Номинал тури
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book155.Book155PutViewModel.SprObjectId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book155.Book155PutViewModel.WorthAccount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book155.Book155PutViewModel.CounterCashierId">
+            <summary>
+            Сановчи кассир коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book155.Book155PutViewModel.From175">
+            <summary>
+            Қайта санаш кассасиданми
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PostViewModel.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PostViewModel.FromCashierId">
+            <summary>
+            Кассир коди(топширадиган)
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PostViewModel.ToCashierId">
+            <summary>
+            Кассир коди(қабул қиладиган)
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PostViewModel.CashValue">
+            <summary>
+            Қиймати
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PostViewModel.Accept">
+            <summary>
+            Олдим
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PostViewModel.OperationId">
+            <summary>
+            Номинал тури
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PostViewModel.SprObjectId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PostViewModel.WorthAccount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PostViewModel.SystemDate">
+            <summary>
+            Sistema vaqti
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PostViewModel.CounterCashierId">
+            <summary>
+            Сановчи кассир коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PostViewModel.From175">
+            <summary>
+            Қайта санаш кассасиданми
+            </summary>
+        </member>
+        <member name="T:Entitys.ViewModels.CashOperation.Book175PutViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PutViewModel.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PutViewModel.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PutViewModel.FromCashierId">
+            <summary>
+            Кассир коди(топширадиган)
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PutViewModel.ToCashierId">
+            <summary>
+            Кассир коди(қабул қиладиган)
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PutViewModel.CashValue">
+            <summary>
+            Қиймати
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PutViewModel.Accept">
+            <summary>
+            Олдим
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PutViewModel.OperationId">
+            <summary>
+            Номинал тури
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PutViewModel.SprObjectId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PutViewModel.WorthAccount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PutViewModel.SystemDate">
+            <summary>
+            Sistema vaqti
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PutViewModel.CounterCashierId">
+            <summary>
+            Сановчи кассир коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175PutViewModel.From175">
+            <summary>
+            Қайта санаш кассасиданми
+            </summary>
+        </member>
+        <member name="T:Entitys.ViewModels.CashOperation.Book175ViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175ViewModel.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175ViewModel.FromCasheirId">
+            <summary>
+            Кассир коди(топширадиган)
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175ViewModel.ToCashierId">
+            <summary>
+            Кассир коди(қабул қиладиган)
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175ViewModel.CashValue">
+            <summary>
+            Қиймати
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175ViewModel.Accept">
+            <summary>
+            Олдим
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Book175ViewModel.OperationId">
+            <summary>
+            Номинал тури
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.CashOperByCashierRep1Main.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.CashOperByCashierRep1Main.Fio">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.CashOperByCashierRep1Main.Position">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.CashOperByCashierRep1Main.AllSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.CashOperByCashierRep1Main.ValuesDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.CashOperByCashierValue.Summa">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.CashOperByCashierValueBottom.Date">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.CashOperByCashierValueBottom.Summa">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ChiefaccountantTable.ChiefaccountantTablePostViewModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ChiefaccountantTable.ChiefaccountantTablePostViewModel.FIO">
+            <summary>
+            
+            </summary>        
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ChiefaccountantTable.ChiefaccountantTablePostViewModel.BankKod">
+            <summary>
+            
+            </summary>        
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ChiefaccountantTable.ChiefaccountantTablePostViewModel.UserId">
+            <summary>
+            
+            </summary>        
+        </member>
+        <member name="T:Entitys.ViewModels.CashOperation.ChiefAccountantViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Entitys.ViewModels.CashOperation.Collector.CollectorResultViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Collector.CollectorResultViewModel.Data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Collector.CollectorResultViewModel.Total">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Entitys.ViewModels.CashOperation.DayClosedViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.EventHistory.EventHistoryViewModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.EventHistory.EventHistoryViewModel.SystemDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.EventHistory.EventHistoryViewModel.UserName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.EventHistory.EventHistoryViewModel.ModulName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.EventHistory.EventHistoryViewModel.UserEventType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.EventHistory.EventHistoryViewModel.BankKod">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal15.Book15PostViewModel.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal15.Book15PostViewModel.Journal16Id">
+            <summary>
+            Йўналиш рақами
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal15.Book15PostViewModel.Summa">
+            <summary>
+            Сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal15.Book15PostViewModel.Description">
+            <summary>
+            Изоҳ
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal15.Book15PostViewModel.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal15.Book15PostViewModel.BagsNumber">
+            <summary>
+            Қоп рақами/номи
+            </summary>
+        </member>
+        <member name="T:Entitys.ViewModels.CashOperation.Journal15.Journal15ResultViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal15.Journal15ResultViewModel.Data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal15.Journal15ResultViewModel.Total">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Entitys.ViewModels.CashOperation.Journal15.Journal15ViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal15.Journal15ViewModel.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal15.Journal15ViewModel.Journal16Id">
+            <summary>
+            Йўналиш рақами
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal15.Journal15ViewModel.Summa">
+            <summary>
+            Сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal15.Journal15ViewModel.Description">
+            <summary>
+            Изоҳ
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal15.Journal15ViewModel.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal15.Journal15ViewModel.BagsNumber">
+            <summary>
+            Қоп рақами/номи
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal15.Journal15ViewModel.IsEmpty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal15.Journal15ViewModel.SystemDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Entitys.ViewModels.CashOperation.Journal16VM.Journal16DropDownViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal16VM.Journal16DropDownViewModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal16VM.Journal16DropDownViewModel.DirectionNumber">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Entitys.ViewModels.CashOperation.Journal16VM.Journal16PostViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal16VM.Journal16PostViewModel.DirectionNumber">
+             <summary>
+            Йўналиш рақами 
+             </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal16VM.Journal16PostViewModel.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal16VM.Journal16PostViewModel.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal16VM.Journal16PostViewModel.SystemDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Entitys.ViewModels.CashOperation.Journal16VM.Journal16PutViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal16VM.Journal16PutViewModel.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal16VM.Journal16PutViewModel.DirectionNumber">
+             <summary>
+            Йўналиш рақами 
+             </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal16VM.Journal16PutViewModel.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal16VM.Journal16PutViewModel.CollectorName">
+            <summary>
+            Инкассация ФИО лари
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal16VM.Journal16PutViewModel.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal16VM.Journal16PutViewModel.BagsCount">
+            <summary>
+            Қоплар сони
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal16VM.Journal16PutViewModel.Summa">
+            <summary>
+            Сумма
+            </summary>
+        </member>
+        <member name="T:Entitys.ViewModels.CashOperation.Journal16VM.Journal16ResultViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Entitys.ViewModels.CashOperation.Journal16VM.Journal16ViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Entitys.ViewModels.CashOperation.Journal16VM.Journal16WithJournal15ResultViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PostViewModel.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PostViewModel.BagNumber">
+            <summary>
+            Қоп рақами
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PostViewModel.Summa">
+            <summary>
+            Сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PostViewModel.LackSumma">
+            <summary>
+            Камомад сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PostViewModel.WorthlessSumma">
+            <summary>
+            Яроқсиз сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PostViewModel.ReceiptCount">
+            <summary>
+            Чеклар сони
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PostViewModel.ReceiptSumma">
+            <summary>
+            Чеклар суммаси
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PostViewModel.Comment">
+            <summary>
+            Изоҳ
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PostViewModel.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PostViewModel.CounterCashierId">
+            <summary>
+            Сановчи кассир
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PostViewModel.ExcessSumma">
+            <summary>
+            Ортиқча сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PostViewModel.RealTime">
+            <summary>
+            Сервер вақти
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PostViewModel.Status">
+            <summary>
+            Status
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PostViewModel.Date16">
+            <summary>
+            Журнал - 16 даги сана
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PostViewModel.FakeSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PutViewModel.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PutViewModel.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PutViewModel.BagNumber">
+            <summary>
+            Қоп рақами
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PutViewModel.Summa">
+            <summary>
+            Сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PutViewModel.LackSumma">
+            <summary>
+            Камомад сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PutViewModel.WorthlessSumma">
+            <summary>
+            Яроқсиз сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PutViewModel.ReceiptCount">
+            <summary>
+            Чеклар сони
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PutViewModel.ReceiptSumma">
+            <summary>
+            Чеклар суммаси
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PutViewModel.Comment">
+            <summary>
+            Изоҳ
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PutViewModel.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PutViewModel.CounterCashierId">
+            <summary>
+            Сановчи кассир
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PutViewModel.ExcessSumma">
+            <summary>
+            Ортиқча сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PutViewModel.RealTime">
+            <summary>
+            Сервер вақти
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PutViewModel.Status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PutViewModel.Date16">
+            <summary>
+            Журнал - 16 даги сана
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PutViewModel.FakeSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176ViewModels.Id">
+            <summary>
+            Ёзув коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176ViewModels.Date">
+            <summary>
+            Сана
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176ViewModels.BagNumber">
+            <summary>
+            Қоп рақами
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176ViewModels.Summa">
+            <summary>
+            Сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176ViewModels.LackSumma">
+            <summary>
+            Камомад сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176ViewModels.WorthlessSumma">
+            <summary>
+            Яроқсиз сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176ViewModels.ReceiptCount">
+            <summary>
+            Чеклар сони
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176ViewModels.ReceiptSumma">
+            <summary>
+            Чеклар суммаси
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176ViewModels.Comment">
+            <summary>
+            Изоҳ
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176ViewModels.UserId">
+            <summary>
+            Фойдаланувчи коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176ViewModels.CounterCashierId">
+            <summary>
+            Сановчи кассир
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176ViewModels.CounterCashierName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176ViewModels.ExcessSumma">
+            <summary>
+            Ортиқча сумма
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176ViewModels.RealTime">
+            <summary>
+            Сервер вақти
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176ViewModels.Status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176ViewModels.FakeSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176ViewModels.Date16">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Report2ExcelExport.FromDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Report2ExcelExport.ToDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.Report2ExcelExport.BankKod">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Entitys.ViewModels.CashOperation.ReportModels.DetailedCurrencyReportInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.DetailedCurrencyReportInfo.Mfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.DetailedCurrencyReportInfo.Posision">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.DetailedCurrencyReportInfo.CurrencySum">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.DetailedCurrencyReportInfo.FromDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.DetailedCurrencyReportInfo.ToDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2CurCashier.IsUser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2CurCashier.CashierId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2CurCashier.Fio">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2CurCashier.Position">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2Currency.IsUser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2Currency.CurrencyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2Currency.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2CurrencySumms.IsUser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2CurrencySumms.CurrencyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2CurrencySumms.CashierId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2CurrencySumms.Summa">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Report2ViewModel.MainPart">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Report2ViewModel.BottomPart">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Report2ViewModelExemplar.MainPart">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Report2ViewModelExemplar.BottomPart">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2MainPartExemplar.CashierId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2MainPartExemplar.IsUser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2MainPartExemplar.Fio">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2MainPartExemplar.Position">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2MainPartExemplar.Currency">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Currency.CurrencyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Currency.CurrencyName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Currency.AllSumma">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Currency.ValuesDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2MainPart.CashierId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2MainPart.IsUser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2MainPart.Fio">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2MainPart.Position">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2MainPart.CurrencyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2MainPart.CurrencyName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2MainPart.ValuesDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2BottomPart.CurrencyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2BottomPart.CurrencyName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2BottomPart.AllValues">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.CashOperation.ReportModels.Rep2BottomPart.ValuesDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Reference.RefCountryViewsModel.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Reference.RefCountryViewsModel.Name">
+            <summary>
+            Номи
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Reference.RefCountryViewsModel.Code">
+            <summary>
+            Қисқача коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Reference.RefCountryViewsModel.DisplayOrder">
+            <summary>
+            Display order
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Reference.RefDistrictViewsModel.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Reference.RefDistrictViewsModel.Name">
+            <summary>
+            Номи
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Reference.RefDistrictViewsModel.ShortName">
+            <summary>
+            Қисқача коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Reference.RefDistrictViewsModel.DisplayOrder">
+            <summary>
+            Display order
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Reference.RefDistrictViewsModel.RegionId">
+            <summary>
+            Қайси ҳудудга тегишли
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Reference.RefRegionViewsModel.Id">
+            <summary>
+            Primary Key
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Reference.RefRegionViewsModel.Name">
+            <summary>
+            Номи
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Reference.RefRegionViewsModel.ShortName">
+            <summary>
+            Қисқача коди
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Reference.RefRegionViewsModel.DisplayOrder">
+            <summary>
+            Display order
+            </summary>
+        </member>
+        <member name="P:Entitys.ViewModels.Reference.RefRegionViewsModel.CountryId">
+            <summary>
+            Қайси ҳудудга тегишли
+            </summary>
+        </member>
+    </members>
+</doc>

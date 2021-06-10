@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ReferenceApi</name>
+    </assembly>
+    <members>
+        <member name="M:ReferenceApi.Controllers.CountryController.PageGetAll(System.Int32,System.Int32,System.String)">
+            <summary>
+            Давлатлар рўйхати 							
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReferenceApi.Controllers.CountryController.GetById(System.Int32)">
+            <summary>
+            Давлатлар рўйхати 	By id
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReferenceApi.Controllers.CountryController.Add(Entitys.ViewModels.Reference.RefCountryViewsModel)">
+            <summary>
+            Давлатлар рўйхати Добавить 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReferenceApi.Controllers.CountryController.Update(Entitys.ViewModels.Reference.RefCountryViewsModel)">
+            <summary>
+            Давлатлар рўйхати Изменить 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReferenceApi.Controllers.CountryController.Delete(System.Int32)">
+            <summary>
+            Давлатлар рўйхати Удалить  
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReferenceApi.Controllers.DistrictController.PageGetAll(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Туманлар рўйхати						
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReferenceApi.Controllers.DistrictController.GetById(System.Int32)">
+            <summary>
+            Туманлар рўйхати 	By id
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReferenceApi.Controllers.DistrictController.Add(Entitys.ViewModels.Reference.RefDistrictViewsModel)">
+            <summary>
+            Туманлар рўйхати	 Добавить 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReferenceApi.Controllers.DistrictController.Update(Entitys.ViewModels.Reference.RefDistrictViewsModel)">
+            <summary>
+            Туманлар рўйхати	 Изменить 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReferenceApi.Controllers.DistrictController.Delete(System.Int32)">
+            <summary>
+            Туманлар рўйхати 	 Удалить  
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReferenceApi.Controllers.RegionController.PageGetAll(System.Int32,System.Int32,System.String)">
+            <summary>
+            Вилоятлар–					 					
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReferenceApi.Controllers.RegionController.GetById(System.Int32)">
+            <summary>
+            Вилоятлар– By id
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReferenceApi.Controllers.RegionController.Add(Entitys.ViewModels.Reference.RefRegionViewsModel)">
+            <summary>
+            Вилоятлар– Добавить 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReferenceApi.Controllers.RegionController.Update(Entitys.ViewModels.Reference.RefRegionViewsModel)">
+            <summary>
+            Вилоятлар–  Изменить 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReferenceApi.Controllers.RegionController.Delete(System.Int32)">
+            <summary>
+            Вилоятлар– Удалить  
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

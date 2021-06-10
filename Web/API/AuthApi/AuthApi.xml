@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AuthApi</name>
+    </assembly>
+    <members>
+        <member name="F:AuthApi.Controllers.AuthController._tokenService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:AuthApi.Controllers.AuthController._orgService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:AuthApi.Controllers.AuthController._authUserService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AuthApi.Controllers.AuthController.#ctor(AuthService.Interfaces.ITokenService,MainsService.Interfaces.IEntOrgService,AdminService.Interfaces.IAuthUsersService)">
+            <summary>
+            
+            </summary>
+            <param name="tokenService"></param>
+            <param name="orgService"></param>
+            <param name="authUserService"></param>
+        </member>
+        <member name="M:AuthApi.Controllers.AuthController.Login(AuthService.Models.LoginModel)">
+            <summary>
+            
+            </summary>
+            <param name="login"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthApi.Controllers.AuthController.RefreshToken(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="refreshtoken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthApi.Controllers.AuthController.Register(AuthService.Models.RegisterModel)">
+            <summary>
+            Регистрация
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthApi.Controllers.AuthController.LogOut(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="refreshtoken"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

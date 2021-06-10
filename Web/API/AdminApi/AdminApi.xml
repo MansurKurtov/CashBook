@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AdminApi</name>
+    </assembly>
+    <members>
+        <member name="T:AdminApi.Controllers.CashBookAdminController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AdminApi.Controllers.CashBookAdminController.#ctor(AdminService.Interfaces.IAuthUsersService,Microsoft.Extensions.Logging.ILogger{AdminApi.Controllers.CashBookAdminController},AdminService.Interfaces.IAuthModulesService)">
+            <summary>
+            
+            </summary>
+            <param name="userService"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="P:AdminApi.Controllers.CashBookAdminController.OrgId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AdminApi.Controllers.CashBookAdminController.UserId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AdminApi.Controllers.CashBookAdminController.StructureId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AdminApi.Controllers.CashBookAdminController.Permissions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AdminApi.Controllers.CashBookAdminController.GetAllUsers">
+            <summary>
+            Get All Users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AdminApi.Controllers.CashBookAdminController.GetUsersOnly">
+            <summary>
+            Gets simple users collection for SuperAdmin
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AdminApi.Controllers.CashBookAdminController.GetUserByID(System.Int32)">
+            <summary>
+            Gets User By userId
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminApi.Controllers.CashBookAdminController.UserActivate(System.Int32,System.Boolean)">
+            <summary>
+            User Activate
+            </summary>
+            <param name="id"></param>
+            <param name="Activate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminApi.Controllers.CashBookAdminController.AddUser(Entitys.PostModels.UserPostModel)">
+            <summary>
+            Add user
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminApi.Controllers.CashBookAdminController.UpdateUser(Entitys.PostModels.UserPostModel)">
+            <summary>
+            Update user
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminApi.Controllers.CashBookAdminController.DeleteUser(System.Int32)">
+            <summary>
+            Delete user from database
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminApi.Controllers.CashBookAdminController.ChangePassword(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="oldPassword"></param>
+            <param name="newPassword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminApi.Controllers.CashBookAdminController.GetBanks">
+            <summary>
+            Gets Banks collection
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AdminApi.Controllers.CashBookAdminController.GetBanksForSuperAdmin">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AdminApi.Controllers.CashBookAdminController.GetCashierTypes">
+            <summary>
+            Gets Cashier Types collection
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AdminApi.Controllers.CashBookAdminController.GetPermissions">
+            <summary>
+            Gets all user permissions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AdminApi.Controllers.CashBookAdminController.IsDayClosed(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminApi.Controllers.CashBookAdminController.CloseDay(Entitys.PostModels.Admin.OpenCloseDayPostModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminApi.Controllers.CashBookAdminController.SetClearCloseDayAll(Entitys.PostModels.Admin.OpenCloseDayPostModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminApi.Controllers.CashBookAdminController.OpenDay(Entitys.PostModels.Admin.OpenCloseDayPostModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminApi.Controllers.CashBookAdminController.GetBranches(System.DateTime)">
+            <summary>
+            Get all bank's branches status
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:AdminApi.Controllers.EventHisoryController._eventHistoryService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AdminApi.Controllers.EventHisoryController.#ctor(AdminService.Interfaces.IEventHistoryService)">
+            <summary>
+            
+            </summary>
+            <param name="eventHistoryService"></param>
+        </member>
+        <member name="P:AdminApi.Controllers.EventHisoryController.BankKod">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AdminApi.Controllers.EventHisoryController.GetByDate(System.DateTime,System.DateTime,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AdminApi.Controllers.SupervisingAccountantController">
+            <summary>
+            
+            </summary>    
+        </member>
+        <member name="M:AdminApi.Controllers.SupervisingAccountantController.#ctor(AdminService.Interfaces.ISupervisingAccountantService)">
+            <summary>
+            
+            </summary>
+            <param name="supervisingAccountantService"></param>
+        </member>
+        <member name="M:AdminApi.Controllers.SupervisingAccountantController.GetSupAccountant">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AdminApi.Controllers.SupervisingAccountantController.Add(Entitys.PostModels.CashOperations.SupervisingAccountantPostModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminApi.Controllers.SupervisingAccountantController.Update(Entitys.PostModels.CashOperations.SupervisingAccountantPostModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminApi.Controllers.SupervisingAccountantController.DeleteById(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

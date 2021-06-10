@@ -1,0 +1,1439 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CashOperationsApi</name>
+    </assembly>
+    <members>
+        <member name="T:CashOperationsApi.Controllers.Book120Controller">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CashOperationsApi.Controllers.Book120Controller._book120Service">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Book120Controller.MiddleName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Book120Controller.Permissions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Book120Controller.CompanyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book120Controller.#ctor(AccountingCashTransactionsService.Interfaces.IBook120Service,Microsoft.Extensions.Logging.ILogger{CashOperationsApi.Controllers.Book120Controller})">
+            <summary>
+            
+            </summary>
+            <param name="book120Service"></param>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book120Controller.GetByDate(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book120Controller.SetFirstSaldo(System.DateTime,System.Int32,System.Double)">
+            <summary>
+            Set first saldo informations for Book120
+            </summary>
+            <param name="date"></param>
+            <param name="saldoBeginCount"></param>
+            <param name="saldoBeginSumma"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book120Controller.GetChiefAccountantName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book120Controller.GetBankName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book120Controller.ExportToExcel(System.Collections.Generic.List{Entitys.Models.ExcelModelForBook141})">
+            <summary>
+            Export to Excel
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CashOperationsApi.Controllers.Book121Controller">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Book121Controller.CompanyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book121Controller.#ctor(AccountingCashTransactionsService.Interfaces.IBook121Service,Microsoft.Extensions.Logging.ILogger{CashOperationsApi.Controllers.Book121Controller})">
+            <summary>
+            
+            </summary>
+            <param name="book121Service"></param>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book121Controller.GetByDate(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book121Controller.GetCurrencyTypes">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book121Controller.SetFirstSaldo(System.DateTime,System.Int32,System.Int32,System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <param name="currencyCode"></param>
+            <param name="saldoBeginCount"></param>
+            <param name="saldoBeginSumma"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book121Controller.GetChiefAccountantName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book121Controller.GetBankName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book121Controller.ExportToExcel(System.Collections.Generic.List{Entitys.Models.Book121Excel})">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CashOperationsApi.Controllers.Book141AController">
+            <summary>
+            
+            </summary>    
+        </member>
+        <member name="F:CashOperationsApi.Controllers.Book141AController._book141AService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book141AController.#ctor(AccountingCashTransactionsService.Interfaces.IBook141AService,Microsoft.Extensions.Logging.ILogger{CashOperationsApi.Controllers.Book141AController})">
+            <summary>
+            
+            </summary>
+            <param name="book141AService"></param>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book141AController.GetByDate(System.DateTime)">
+            <summary>
+            Get by Date
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book141AController.SetFirstSaldo(System.DateTime,System.Int32,System.Double)">
+            <summary>
+            Set first saldo informations for Book141
+            </summary>
+            <param name="date"></param>
+            <param name="saldoBeginCount"></param>
+            <param name="saldoBeginSumma"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book141AController.GetChiefAccountantName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book141AController.GetBankName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book141AController.ExportToExcel(System.Collections.Generic.List{Entitys.Models.ExcelModelForBook141})">
+            <summary>
+            Export to excel
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CashOperationsApi.Controllers.Book141Controller">
+            <summary>
+            
+            </summary>    
+        </member>
+        <member name="F:CashOperationsApi.Controllers.Book141Controller._book141Service">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Book141Controller.LastName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Book141Controller.MiddleName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Book141Controller.Permissions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Book141Controller.CompanyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book141Controller.#ctor(AccountingCashTransactionsService.Interfaces.IBook141Service,Microsoft.Extensions.Logging.ILogger{CashOperationsApi.Controllers.Book141Controller})">
+            <summary>
+            
+            </summary>
+            <param name="book141Service"></param>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book141Controller.GetByDate(System.DateTime)">
+            <summary>
+            Get by Date
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book141Controller.SetFirstSaldo(System.DateTime,System.Int32,System.Double)">
+            <summary>
+            Set first saldo informations for Book141
+            </summary>
+            <param name="date"></param>
+            <param name="saldoBeginCount"></param>
+            <param name="saldoBeginSumma"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book141Controller.GetChiefAccountantName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book141Controller.GetBankName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book141Controller.ExportToExcel(System.Collections.Generic.List{Entitys.Models.ExcelModelForBook141})">
+            <summary>
+            ExportToExcel
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CashOperationsApi.Controllers.Book155Controller">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book155Controller.#ctor(AccountingCashTransactionsService.Interfaces.IBook155Service,Microsoft.Extensions.Logging.ILogger{CashOperationsApi.Controllers.Book155Controller})">
+            <summary>
+            
+            </summary>
+            <param name="book155Service"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Book155Controller.FirstName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Book155Controller.LastName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Book155Controller.MiddleName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book155Controller.Add(Entitys.PostModels.CashOperations.Book155Model)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns>
+            asdasdasdasdasd
+            </returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book155Controller.Delete(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book155Controller.GetAll(System.DateTime,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <param name="operationId"></param>
+            <param name="filterUserId"></param>
+            <param name="sprObjectId"></param>
+            <param name="worthAccount"></param>
+            <returns>
+            asdasdasd
+            </returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book155Controller.GetById(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book155Controller.Update(Entitys.ViewModels.CashOperation.Book155.Book155PutViewModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book155Controller.SubmitAcceptance(Entitys.ViewModels.CashOperation.Book155.AcceptanceViewModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book155Controller.GetCashiers">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book155Controller.GetReCounterCashiers">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book155Controller.GetCashiersWithType">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book155Controller.GetCurrencyTypes">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book155Controller.GetWorthAccounts">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book155Controller.IsDayClosed(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book155Controller.ExportToExcel(System.Collections.Generic.List{Entitys.ViewModels.CashOperation.Book155.Book155ViewModels})">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book155Controller.GetBook155OtherInouts">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CashOperationsApi.Controllers.Book171Controller">
+            <summary>
+            
+            </summary>    
+        </member>
+        <member name="F:CashOperationsApi.Controllers.Book171Controller._book171Service">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book171Controller.#ctor(AccountingCashTransactionsService.Interfaces.IBook171Service)">
+            <summary>
+            
+            </summary>
+            <param name="book171Service"></param>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book171Controller.GetByDate(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book171Controller.SetFirstSaldo(System.DateTime,System.String,System.Int32,System.Double)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <param name="accountCode"></param>
+            <param name="saldoBeginCount"></param>
+            <param name="saldoBeginSumma"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book171Controller.GetWorthAccounts">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book171Controller.GetChiefAccountantName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book171Controller.GetBankName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book171Controller.ExportToExcel(System.Collections.Generic.List{Entitys.Models.Book171Excel})">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CashOperationsApi.Controllers.Book175Controller">
+            <summary>
+            
+            </summary>    
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book175Controller.#ctor(AccountingCashTransactionsService.Interfaces.IBook175Service)">
+            <summary>
+            
+            </summary>
+            <param name="book175Service"></param>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Book175Controller.FromCasheirId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book175Controller.GetAll">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book175Controller.GetByDate(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book175Controller.Add(Entitys.ViewModels.CashOperation.Book175PostViewModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book175Controller.Update(Entitys.ViewModels.CashOperation.Book175PutViewModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book175Controller.DeleteById(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Book175Controller.ExportToExcel(System.Collections.Generic.List{Entitys.ViewModels.CashOperation.Book155.Book155ViewModels})">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.ChiefaccountantTableController.UserId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.ChiefaccountantTableController.GetAll">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.ChiefaccountantTableController.GetById(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.ChiefaccountantTableController.AddOrUpdate(Entitys.ViewModels.CashOperation.ChiefaccountantTable.ChiefaccountantTablePostViewModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.ChiefaccountantTableController.Delete(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CashOperationsApi.Controllers.CollectorController">
+            <summary>
+            
+            </summary>    
+        </member>
+        <member name="M:CashOperationsApi.Controllers.CollectorController.#ctor(AccountingCashTransactionsService.Interfaces.ICollectorService,Microsoft.Extensions.Logging.ILogger{CashOperationsApi.Controllers.CollectorController})">
+            <summary>
+            
+            </summary>
+            <param name="collectorService"></param>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.CollectorController.GetAll(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="journal16Id"></param>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.CollectorController.GetById(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.CollectorController.Add(Entitys.ViewModels.CashOperation.Collector.CollectorViewModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.CollectorController.AddCollection(System.Collections.Generic.List{Entitys.ViewModels.CashOperation.Collector.CollectorViewModel})">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.CollectorController.Update(Entitys.ViewModels.CashOperation.Collector.CollectorViewModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.CollectorController.DeleteById(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.CollectorController.GetJournal16ByDate(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CashOperationsApi.Controllers.CommonController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CashOperationsApi.Controllers.CommonController._commonService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.CommonController.CompanyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.CommonController.#ctor(AccountingCashTransactionsService.Interfaces.ICommonService)">
+            <summary>
+            
+            </summary>
+            <param name="commonService"></param>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.CommonController.GetChiefAccountantName(System.Int32)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.CommonController.GetBankName(System.Int32)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.CommonController.GetDeveloppersName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:CashOperationsApi.Controllers.CommonController.GetSupAccountant">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.CommonController.GetWorkingDate">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.CounterCashierController.#ctor(AccountingCashTransactionsService.Interfaces.ICounterCashierService)">
+            <summary>
+            
+            </summary>
+            <param name="counterCashierService"></param>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.CounterCashierController.BankCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.CounterCashierController.GetAll">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.CounterCashierController.GetById(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.CounterCashierController.Add(Entitys.Models.CashOperation.CounterCashier)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.CounterCashierController.Update(Entitys.Models.CashOperation.CounterCashier)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.CounterCashierController.Delete(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CashOperationsApi.Controllers.Journal109Controller">
+            <summary>
+            
+            </summary>    
+        </member>
+        <member name="F:CashOperationsApi.Controllers.Journal109Controller._journal109Service">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CashOperationsApi.Controllers.Journal109Controller._logger">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal109Controller.#ctor(AccountingCashTransactionsService.Interfaces.IJournal109Service,Microsoft.Extensions.Logging.ILogger{CashOperationsApi.Controllers.Journal109Controller})">
+            <summary>
+            
+            </summary>
+            <param name="journal109Service"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal109Controller.GetAll(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal109Controller.ExportToExcel(System.Collections.Generic.List{Entitys.Models.ExcelModel})">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="F:CashOperationsApi.Controllers.Journal109WorthController._journal109WorthService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal109WorthController.#ctor(AccountingCashTransactionsService.Interfaces.IJournal109WorthService)">
+            <summary>
+            
+            </summary>
+            <param name="journal109WorthService"></param>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Journal109WorthController.FirstName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Journal109WorthController.LastName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Journal109WorthController.MiddleName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal109WorthController.GetByDate(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal109WorthController.ExportToExcel(System.Collections.Generic.List{Entitys.Models.ExcelModel})">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CashOperationsApi.Controllers.Journal110Controller">
+            <summary>
+            
+            </summary>    
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal110Controller.#ctor(AccountingCashTransactionsService.Interfaces.IBook110Service)">
+            <summary>
+            
+            </summary>
+            <param name="book110Service"></param>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Journal110Controller.FirstName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Journal110Controller.UserId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Journal110Controller.LastName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Journal110Controller.MiddleName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Journal110Controller.CompanyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal110Controller.GetAll(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal110Controller.GetCashValue(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal110Controller.ExportToExcel(Entitys.Models.Journal110ExcelModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="F:CashOperationsApi.Controllers.Journal110WorthController._journal110WorthService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal110WorthController.#ctor(AccountingCashTransactionsService.Interfaces.IJournal110WorthService)">
+            <summary>
+            
+            </summary>
+            <param name="journal110WorthService"></param>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal110WorthController.GetByDate(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal110WorthController.ReturnTable110(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal110WorthController.GetCashValue(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <param name="operationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal110WorthController.ExportToExcel(Entitys.Models.Journal110WorthExcelModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="F:CashOperationsApi.Controllers.Journal111Controller._journal111Service">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal111Controller.#ctor(AccountingCashTransactionsService.Interfaces.IJournal111Service)">
+            <summary>
+            
+            </summary>
+            <param name="journal111Service"></param>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal111Controller.GetAll(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal111Controller.ExportToExcel(Entitys.ViewModels.CashOperation.Journal111ExcelPostModel)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CashOperationsApi.Controllers.Journal123Controller">
+            <summary>
+            
+            </summary>    
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Journal123Controller.FirstName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Journal123Controller.LastName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.Journal123Controller.MiddleName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal123Controller.#ctor(AccountingCashTransactionsService.Interfaces.IJournal123Service)">
+            <summary>
+            
+            </summary>
+            <param name="journal123Service"></param>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal123Controller.AddDate(Entitys.ViewModels.CashOperation.Journal123.Journal123PostModel)">
+            <summary>
+            Addes Date to Journal123 table
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal123Controller.UpdateDate(Entitys.ViewModels.CashOperation.Journal123.Journal123UpdateModel)">
+            <summary>
+            Updates Date in Journal123 table by its model
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal123Controller.GetDateById(System.Int32)">
+            <summary>
+            Returns Date from Journal123 table by it's Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal123Controller.GetDateByDate(System.DateTime)">
+            <summary>
+            Returns row from Journal123 table by date
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal123Controller.DeleteDateById(System.Int32)">
+            <summary>
+            Deletes Date row in Journal123 by Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal123Controller.AddContent(Entitys.ViewModels.CashOperation.Journal123.Journal123ContentPostModel)">
+            <summary>
+            Addes Content in Journal123_Content by it's model data
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal123Controller.UpdateContent(Entitys.ViewModels.CashOperation.Journal123.Journal123ContentUpdateModel)">
+            <summary>
+            Updates Content in Journal123_Content table by model data
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal123Controller.GetContentById(System.Int32)">
+            <summary>
+            Returns Content model by it's Id from Journal123_Content table
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal123Controller.GetContentByDate(System.DateTime)">
+            <summary>
+            Return Content by given date param
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal123Controller.GetContentsByJournal123Id(System.Int32)">
+            <summary>
+            Returns Content by it's journal123_Id key from Journal123_Content table
+            </summary>
+            <param name="journal123Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal123Controller.DeleteContentById(System.Int32)">
+            <summary>
+            Deletes Content in Journal123_Content table by it's Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal123Controller.AddFio(Entitys.ViewModels.CashOperation.Journal123.Journal123FioPostModel)">
+            <summary>
+            Addes Fio to Journal123_FIO table
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal123Controller.UpdateFio(Entitys.ViewModels.CashOperation.Journal123.Journal123FioUpdateModel)">
+            <summary>
+            Updates Journal123_FIO data
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal123Controller.GetFioById(System.Int32)">
+            <summary>
+            Returns FIO by it's id from Journal123_fio data table
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal123Controller.GetFioByDate(System.DateTime)">
+            <summary>
+            Returns FIO collection by date
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal123Controller.GetFiosByJournal123Id(System.Int32)">
+            <summary>
+            Returns Fio by Journal123_id
+            </summary>
+            <param name="journal123Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal123Controller.DeleteFioById(System.Int32)">
+            <summary>
+            Deletes Journal123_FIO data by it's ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal123Controller.ExportToExcel(System.Collections.Generic.List{Entitys.Models.ExcelFor123Froms})">
+            <summary>
+            Export to Excel
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CashOperationsApi.Controllers.Journal15Controller">
+            <summary>
+            
+            </summary>    
+        </member>
+        <member name="F:CashOperationsApi.Controllers.Journal15Controller._journal15Service">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal15Controller.#ctor(AccountingCashTransactionsService.Interfaces.IJournal15Service,Microsoft.Extensions.Logging.ILogger{CashOperationsApi.Controllers.Journal15Controller})">
+            <summary>
+            
+            </summary>
+            <param name="book15Service"></param>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal15Controller.GetAll(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="journal16Id"></param>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal15Controller.GetById(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal15Controller.Add(Entitys.ViewModels.CashOperation.Journal15.Journal15ViewModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal15Controller.Update(Entitys.ViewModels.CashOperation.Journal15.Journal15ViewModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal15Controller.DeleteById(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal15Controller.GetJournal16ByDate(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal15Controller.IsDayClosed(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal15Controller.GetCurrencyList">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal15Controller.ExportToExcel(Entitys.ViewModels.CashOperation.Journal15.Journal15ForEcxel)">
+            <summary>
+            Export to Excel
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CashOperationsApi.Controllers.Journal16Controller">
+            <summary>
+            
+            </summary>    
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal16Controller.#ctor(AccountingCashTransactionsService.Interfaces.IJournal16Service,Microsoft.Extensions.Logging.ILogger{CashOperationsApi.Controllers.Journal16Controller})">
+            <summary>
+            
+            </summary>
+            <param name="book16Service"></param>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal16Controller.SetAcceptance(Entitys.ViewModels.CashOperation.Journal16VM.SetAcceptanceViewModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal16Controller.GetAllWithJournal15(System.DateTime,System.Nullable{System.Int32},System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <param name="status"></param>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal16Controller.GetById(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal16Controller.Add(Entitys.ViewModels.CashOperation.Journal16VM.Journal16PostViewModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal16Controller.Update(Entitys.ViewModels.CashOperation.Journal16VM.Journal16PutViewModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal16Controller.DeleteById(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal16Controller.GetSupervisingAccountantFullName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal16Controller.IsDayClosed(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal16Controller.ExportToExcel(System.Collections.Generic.List{Entitys.Models.ExcelModelForJournal16})">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal16Controller.SecondExportToExcel(Entitys.Models.ExcelModelForJournal16Second)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CashOperationsApi.Controllers.Journal176Controller">
+            <summary>
+            
+            </summary>    
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal176Controller.#ctor(AccountingCashTransactionsService.Interfaces.IJournal176Service)">
+            <summary>
+            
+            </summary>
+            <param name="journal176Service"></param>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal176Controller.GetAll">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal176Controller.GetById(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal176Controller.GetByDate(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal176Controller.Add(Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PostViewModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal176Controller.Update(Entitys.ViewModels.CashOperation.Journal176ViewModel.Journal176PutViewModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal176Controller.Delete(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal176Controller.GetCounterCashiers">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal176Controller.ExportToExcel(System.Collections.Generic.List{Entitys.Models.ExcelModelForJournal176})">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal176Controller.Jumavoy(System.DateTime,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.Journal176Controller.IsDayClosed(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CashOperationsApi.Controllers.ReportsController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:CashOperationsApi.Controllers.ReportsController._reportsService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.ReportsController.#ctor(AccountingCashTransactionsService.Interfaces.IReportsService)">
+            <summary>
+            
+            </summary>
+            <param name="reportsService"></param>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.ReportsController.BankKod">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.ReportsController.GetCashOperationsByCashier(System.DateTime,System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.ReportsController.GetReport1Val(System.DateTime,System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.ReportsController.TestExcelSimpleReport">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.ReportsController.GetReport1Cashiers(System.DateTime,System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.ReportsController.GetBanks">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.ReportsController.Gettt(System.DateTime,System.DateTime)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.ReturnTable109ValController.#ctor(AccountingCashTransactionsService.Interfaces.IReturnTable109ValService)">
+            <summary>
+            
+            </summary>
+            <param name="returnTable109ValService"></param>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.ReturnTable109ValController.FirstName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.ReturnTable109ValController.LastName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.ReturnTable109ValController.MiddleName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.ReturnTable109ValController.GetByDate(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.ReturnTable109ValController.ExportToExcel(System.Collections.Generic.List{Entitys.Models.ExcelModel})">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="F:CashOperationsApi.Controllers.ReturnTable110ValController._returnTable110ValService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.ReturnTable110ValController.#ctor(AccountingCashTransactionsService.Interfaces.IReturnTable110ValService)">
+            <summary>
+            
+            </summary>
+            <param name="returnTable110ValService"></param>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.ReturnTable110ValController.FirstName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.ReturnTable110ValController.LastName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.ReturnTable110ValController.MiddleName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.ReturnTable110ValController.UserId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CashOperationsApi.Controllers.ReturnTable110ValController.CompanyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.ReturnTable110ValController.GetByDate(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.ReturnTable110ValController.GetCashValue(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <param name="operationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.ReturnTable110ValController.ExportToExcel(Entitys.Models.Jourlan110ReturnExcelModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CashOperationsApi.Controllers.ReturnTable110ValController.GetWorthCashValue(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

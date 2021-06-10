@@ -1,0 +1,529 @@
+2020-05-06 12:00:07.219 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-06 12:00:07.458 +05:00 [INF] Request starting HTTP/2.0 GET https://localhost:44302/weatherforecast  
+2020-05-06 12:00:08.161 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator -> λ:Swashbuckle.AspNetCore.SwaggerGen.ISchemaGenerator -> Microsoft.Extensions.Options.OptionsManager`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> Microsoft.Extensions.Options.OptionsFactory`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> λ:Microsoft.Extensions.Options.IConfigureOptions`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]][] -> Swashbuckle.AspNetCore.SwaggerGen.ConfigureSchemaGeneratorOptions.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while invoking the constructor 'Void .ctor(System.IServiceProvider, Microsoft.Extensions.Options.IOptions`1[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions])' on type 'ConfigureSchemaGeneratorOptions'.
+ ---> System.IO.FileNotFoundException: Could not find file 'D:\Ozodbek Team Projects\CashBook\CBAdminApi\bin\Debug\netcoreapp3.1\CBAdminApi.XML'.
+File name: 'D:\Ozodbek Team Projects\CashBook\CBAdminApi\bin\Debug\netcoreapp3.1\CBAdminApi.XML'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass24_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at AvastInfrastructureRepository.SwaggerLogging.Middlewares.Extensions.StartupConfigureServiceExtensions.<>c__DisplayClass2_0.<SwaggerStartupService>b__0(SwaggerGenOptions options)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at lambda_method(Closure , Object[] )
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context, ICorsPolicyProvider corsPolicyProvider)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-06 12:00:08.370 +05:00 [INF] Request finished in 913.5813ms 500 text/html; charset=utf-8
+2020-05-06 12:00:08.677 +05:00 [INF] Request starting HTTP/2.0 GET https://localhost:44302/favicon.ico  
+2020-05-06 12:00:08.686 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator -> λ:Swashbuckle.AspNetCore.SwaggerGen.ISchemaGenerator -> Microsoft.Extensions.Options.OptionsManager`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> Microsoft.Extensions.Options.OptionsFactory`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> λ:Microsoft.Extensions.Options.IConfigureOptions`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]][] -> Swashbuckle.AspNetCore.SwaggerGen.ConfigureSchemaGeneratorOptions.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while invoking the constructor 'Void .ctor(System.IServiceProvider, Microsoft.Extensions.Options.IOptions`1[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions])' on type 'ConfigureSchemaGeneratorOptions'.
+ ---> System.IO.FileNotFoundException: Could not find file 'D:\Ozodbek Team Projects\CashBook\CBAdminApi\bin\Debug\netcoreapp3.1\CBAdminApi.XML'.
+File name: 'D:\Ozodbek Team Projects\CashBook\CBAdminApi\bin\Debug\netcoreapp3.1\CBAdminApi.XML'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass24_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at AvastInfrastructureRepository.SwaggerLogging.Middlewares.Extensions.StartupConfigureServiceExtensions.<>c__DisplayClass2_0.<SwaggerStartupService>b__0(SwaggerGenOptions options)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at lambda_method(Closure , Object[] )
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context, ICorsPolicyProvider corsPolicyProvider)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-06 12:00:08.702 +05:00 [INF] Request finished in 24.9126ms 500 text/plain
+2020-05-06 12:02:19.670 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-06 12:02:19.877 +05:00 [INF] Request starting HTTP/2.0 GET https://localhost:44302/weatherforecast  
+2020-05-06 12:02:20.175 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator -> λ:Swashbuckle.AspNetCore.SwaggerGen.ISchemaGenerator -> Microsoft.Extensions.Options.OptionsManager`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> Microsoft.Extensions.Options.OptionsFactory`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> λ:Microsoft.Extensions.Options.IConfigureOptions`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]][] -> Swashbuckle.AspNetCore.SwaggerGen.ConfigureSchemaGeneratorOptions.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while invoking the constructor 'Void .ctor(System.IServiceProvider, Microsoft.Extensions.Options.IOptions`1[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions])' on type 'ConfigureSchemaGeneratorOptions'.
+ ---> System.IO.FileNotFoundException: Could not find file 'D:\Ozodbek Team Projects\CashBook\CBAdminApi\bin\Debug\netcoreapp3.1\CBAdminApi.XML'.
+File name: 'D:\Ozodbek Team Projects\CashBook\CBAdminApi\bin\Debug\netcoreapp3.1\CBAdminApi.XML'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass24_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at AvastInfrastructureRepository.SwaggerLogging.Middlewares.Extensions.StartupConfigureServiceExtensions.<>c__DisplayClass2_0.<SwaggerStartupService>b__0(SwaggerGenOptions options)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at lambda_method(Closure , Object[] )
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context, ICorsPolicyProvider corsPolicyProvider)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-06 12:02:20.286 +05:00 [INF] Request finished in 412.3567ms 500 text/html; charset=utf-8
+2020-05-06 12:02:20.522 +05:00 [INF] Request starting HTTP/2.0 GET https://localhost:44302/favicon.ico  
+2020-05-06 12:02:20.527 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator -> λ:Swashbuckle.AspNetCore.SwaggerGen.ISchemaGenerator -> Microsoft.Extensions.Options.OptionsManager`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> Microsoft.Extensions.Options.OptionsFactory`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> λ:Microsoft.Extensions.Options.IConfigureOptions`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]][] -> Swashbuckle.AspNetCore.SwaggerGen.ConfigureSchemaGeneratorOptions.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while invoking the constructor 'Void .ctor(System.IServiceProvider, Microsoft.Extensions.Options.IOptions`1[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions])' on type 'ConfigureSchemaGeneratorOptions'.
+ ---> System.IO.FileNotFoundException: Could not find file 'D:\Ozodbek Team Projects\CashBook\CBAdminApi\bin\Debug\netcoreapp3.1\CBAdminApi.XML'.
+File name: 'D:\Ozodbek Team Projects\CashBook\CBAdminApi\bin\Debug\netcoreapp3.1\CBAdminApi.XML'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass24_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at AvastInfrastructureRepository.SwaggerLogging.Middlewares.Extensions.StartupConfigureServiceExtensions.<>c__DisplayClass2_0.<SwaggerStartupService>b__0(SwaggerGenOptions options)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at lambda_method(Closure , Object[] )
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context, ICorsPolicyProvider corsPolicyProvider)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-06 12:02:20.539 +05:00 [INF] Request finished in 17.7852ms 500 text/plain
+2020-05-06 12:03:28.676 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-06 12:03:28.875 +05:00 [INF] Request starting HTTP/2.0 GET https://localhost:44302/weatherforecast  
+2020-05-06 12:03:29.158 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator -> λ:Swashbuckle.AspNetCore.SwaggerGen.ISchemaGenerator -> Microsoft.Extensions.Options.OptionsManager`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> Microsoft.Extensions.Options.OptionsFactory`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> λ:Microsoft.Extensions.Options.IConfigureOptions`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]][] -> Swashbuckle.AspNetCore.SwaggerGen.ConfigureSchemaGeneratorOptions.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while invoking the constructor 'Void .ctor(System.IServiceProvider, Microsoft.Extensions.Options.IOptions`1[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions])' on type 'ConfigureSchemaGeneratorOptions'.
+ ---> System.IO.FileNotFoundException: Could not find file 'D:\Ozodbek Team Projects\CashBook\CBAdminApi\bin\Debug\netcoreapp3.1\CBAdminApi.XML'.
+File name: 'D:\Ozodbek Team Projects\CashBook\CBAdminApi\bin\Debug\netcoreapp3.1\CBAdminApi.XML'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass24_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at AvastInfrastructureRepository.SwaggerLogging.Middlewares.Extensions.StartupConfigureServiceExtensions.<>c__DisplayClass2_0.<SwaggerStartupService>b__0(SwaggerGenOptions options)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at lambda_method(Closure , Object[] )
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context, ICorsPolicyProvider corsPolicyProvider)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-06 12:03:29.267 +05:00 [INF] Request finished in 394.7064ms 500 text/html; charset=utf-8
+2020-05-06 12:03:29.489 +05:00 [INF] Request starting HTTP/2.0 GET https://localhost:44302/favicon.ico  
+2020-05-06 12:03:29.493 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator -> λ:Swashbuckle.AspNetCore.SwaggerGen.ISchemaGenerator -> Microsoft.Extensions.Options.OptionsManager`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> Microsoft.Extensions.Options.OptionsFactory`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> λ:Microsoft.Extensions.Options.IConfigureOptions`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]][] -> Swashbuckle.AspNetCore.SwaggerGen.ConfigureSchemaGeneratorOptions.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while invoking the constructor 'Void .ctor(System.IServiceProvider, Microsoft.Extensions.Options.IOptions`1[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions])' on type 'ConfigureSchemaGeneratorOptions'.
+ ---> System.IO.FileNotFoundException: Could not find file 'D:\Ozodbek Team Projects\CashBook\CBAdminApi\bin\Debug\netcoreapp3.1\CBAdminApi.XML'.
+File name: 'D:\Ozodbek Team Projects\CashBook\CBAdminApi\bin\Debug\netcoreapp3.1\CBAdminApi.XML'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass24_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at AvastInfrastructureRepository.SwaggerLogging.Middlewares.Extensions.StartupConfigureServiceExtensions.<>c__DisplayClass2_0.<SwaggerStartupService>b__0(SwaggerGenOptions options)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at lambda_method(Closure , Object[] )
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context, ICorsPolicyProvider corsPolicyProvider)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-06 12:03:29.503 +05:00 [INF] Request finished in 13.9501ms 500 text/plain
+2020-05-06 12:06:08.784 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-06 12:06:39.216 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-06 12:06:42.969 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6052/swagger/ui/index.html  
+2020-05-06 12:06:43.264 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator -> λ:Swashbuckle.AspNetCore.SwaggerGen.ISchemaGenerator -> Microsoft.Extensions.Options.OptionsManager`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> Microsoft.Extensions.Options.OptionsFactory`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> λ:Microsoft.Extensions.Options.IConfigureOptions`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]][] -> Swashbuckle.AspNetCore.SwaggerGen.ConfigureSchemaGeneratorOptions.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while invoking the constructor 'Void .ctor(System.IServiceProvider, Microsoft.Extensions.Options.IOptions`1[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions])' on type 'ConfigureSchemaGeneratorOptions'.
+ ---> System.IO.FileNotFoundException: Could not find file 'D:\Ozodbek Team Projects\CashBook\CBAdminApi\bin\Debug\netcoreapp3.1\CBAdminApi.XML'.
+File name: 'D:\Ozodbek Team Projects\CashBook\CBAdminApi\bin\Debug\netcoreapp3.1\CBAdminApi.XML'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass24_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at AvastInfrastructureRepository.SwaggerLogging.Middlewares.Extensions.StartupConfigureServiceExtensions.<>c__DisplayClass2_0.<SwaggerStartupService>b__0(SwaggerGenOptions options)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at lambda_method(Closure , Object[] )
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context, ICorsPolicyProvider corsPolicyProvider)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-06 12:06:43.374 +05:00 [INF] Request finished in 408.4298ms 500 text/html; charset=utf-8
+2020-05-06 12:06:43.497 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6052/favicon.ico  
+2020-05-06 12:06:43.501 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator -> λ:Swashbuckle.AspNetCore.SwaggerGen.ISchemaGenerator -> Microsoft.Extensions.Options.OptionsManager`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> Microsoft.Extensions.Options.OptionsFactory`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]] -> λ:Microsoft.Extensions.Options.IConfigureOptions`1[[Swashbuckle.AspNetCore.SwaggerGen.SchemaGeneratorOptions, Swashbuckle.AspNetCore.SwaggerGen, Version=5.0.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a]][] -> Swashbuckle.AspNetCore.SwaggerGen.ConfigureSchemaGeneratorOptions.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while invoking the constructor 'Void .ctor(System.IServiceProvider, Microsoft.Extensions.Options.IOptions`1[Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions])' on type 'ConfigureSchemaGeneratorOptions'.
+ ---> System.IO.FileNotFoundException: Could not find file 'D:\Ozodbek Team Projects\CashBook\CBAdminApi\bin\Debug\netcoreapp3.1\CBAdminApi.XML'.
+File name: 'D:\Ozodbek Team Projects\CashBook\CBAdminApi\bin\Debug\netcoreapp3.1\CBAdminApi.XML'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass24_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at AvastInfrastructureRepository.SwaggerLogging.Middlewares.Extensions.StartupConfigureServiceExtensions.<>c__DisplayClass2_0.<SwaggerStartupService>b__0(SwaggerGenOptions options)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at lambda_method(Closure , Object[] )
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.ResolveOptional(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context, ICorsPolicyProvider corsPolicyProvider)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-06 12:06:43.539 +05:00 [INF] Request finished in 41.6792ms 500 text/plain
+2020-05-06 12:07:18.283 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-06 12:07:20.550 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6052/swagger/ui/index.html  
+2020-05-06 12:07:20.916 +05:00 [INF] Request finished in 368.6724ms 200 text/html;charset=utf-8
+2020-05-06 12:07:21.068 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6052/swagger/ui/favicon-32x32.png  
+2020-05-06 12:07:21.072 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6052/swagger/v1/swagger.json  
+2020-05-06 12:07:21.089 +05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-05-06 12:07:21.091 +05:00 [INF] Request finished in 22.7469ms 200 image/png
+2020-05-06 12:07:21.191 +05:00 [INF] Request finished in 119.0649ms 200 application/json;charset=utf-8
+2020-05-06 12:07:27.464 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6052/api/Sample/Get  
+2020-05-06 12:07:27.474 +05:00 [INF] Http Request Information:
+RequestId: cf847dd0dcd9435fa7dd5edeee2ef374
+ IsHttps: False
+ Schema: http
+ Http Method: GET
+ Host: localhost:6052
+ Path: /api/Sample/Get
+ QueryString: 
+ Request Body: 
+
+2020-05-06 12:07:27.478 +05:00 [INF] Http Response Information:
+RequestId: cf847dd0dcd9435fa7dd5edeee2ef374
+ IsHttps: False
+ Schema: http
+ Host: localhost:6052
+ Path: /api/Sample/Get
+ QueryString: 
+ Response Body: 
+Duration time: 0ms
+
+2020-05-06 12:07:27.481 +05:00 [INF] Request finished in 17.7658ms 404 
+2020-05-06 12:19:05.418 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-06 12:19:10.382 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6052/swagger/ui/index.html  
+2020-05-06 12:19:10.732 +05:00 [INF] Request finished in 351.9136ms 200 text/html;charset=utf-8
+2020-05-06 12:19:10.881 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6052/swagger/ui/favicon-32x32.png  
+2020-05-06 12:19:10.884 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6052/swagger/v1/swagger.json  
+2020-05-06 12:19:10.904 +05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-05-06 12:19:10.906 +05:00 [INF] Request finished in 25.1294ms 200 image/png
+2020-05-06 12:19:10.982 +05:00 [INF] Request finished in 98.3778ms 200 application/json;charset=utf-8
+2020-05-06 12:19:15.899 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6052/api/Sample/Get  
+2020-05-06 12:19:15.909 +05:00 [INF] Http Request Information:
+RequestId: c110372cc82b430e8121b2e31d5a4740
+ IsHttps: False
+ Schema: http
+ Http Method: GET
+ Host: localhost:6052
+ Path: /api/Sample/Get
+ QueryString: 
+ Request Body: 
+
+2020-05-06 12:19:15.913 +05:00 [INF] Http Response Information:
+RequestId: c110372cc82b430e8121b2e31d5a4740
+ IsHttps: False
+ Schema: http
+ Host: localhost:6052
+ Path: /api/Sample/Get
+ QueryString: 
+ Response Body: 
+Duration time: 0ms
+
+2020-05-06 12:19:15.916 +05:00 [INF] Request finished in 16.6883ms 404 

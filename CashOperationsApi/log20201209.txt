@@ -1,0 +1,472 @@
+2020-12-09 14:25:38.778 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-12-09 14:26:17.025 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/swagger/ui  
+2020-12-09 14:26:20.910 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/swagger/ui  
+2020-12-09 14:26:23.220 +05:00 [INF] Request finished in 6199.036ms 0 
+2020-12-09 14:26:23.582 +05:00 [INF] Request finished in 2671.3495ms 301 
+2020-12-09 14:26:24.246 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/swagger/ui/index.html  
+2020-12-09 14:26:24.912 +05:00 [INF] Request finished in 665.8834ms 200 text/html;charset=utf-8
+2020-12-09 14:26:25.054 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/swagger/ui/swagger-ui-bundle.js  
+2020-12-09 14:26:25.054 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/swagger/ui/swagger-ui-standalone-preset.js  
+2020-12-09 14:26:25.273 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/swagger/ui/swagger-ui.css  
+2020-12-09 14:26:26.606 +05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-12-09 14:26:26.608 +05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-12-09 14:26:26.983 +05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-12-09 14:26:27.027 +05:00 [INF] Request finished in 1972.8638ms 200 application/javascript
+2020-12-09 14:26:27.027 +05:00 [INF] Request finished in 1754.3718ms 200 text/css
+2020-12-09 14:26:27.028 +05:00 [INF] Request finished in 1974.4705ms 200 application/javascript
+2020-12-09 14:26:35.242 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:6053/swagger/v1/swagger.json  
+2020-12-09 14:26:36.210 +05:00 [INF] Request finished in 968.0796ms 200 application/json;charset=utf-8
+2020-12-09 14:42:35.120 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-12-09 14:50:55.647 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Book155/Add application/json 179
+2020-12-09 14:50:55.855 +05:00 [INF] CORS policy execution successful.
+2020-12-09 14:50:59.540 +05:00 [INF] Successfully validated the token.
+2020-12-09 14:51:01.528 +05:00 [INF] Route matched with {action = "Add", controller = "Book155"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Add(Entitys.PostModels.CashOperations.Book155Model) on controller CashOperationsApi.Controllers.Book155Controller (CashOperationsApi).
+2020-12-09 14:51:15.598 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies 
+2020-12-09 14:51:16.327 +05:00 [INF] Executing action method CashOperationsApi.Controllers.Book155Controller.Add (CashOperationsApi) - Validation state: "Valid"
+2020-12-09 14:51:25.429 +05:00 [INF] Executed DbCommand (244ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select GET_WORKING_DATE(837) as result from dual
+2020-12-09 14:51:42.626 +05:00 [INF] Executed DbCommand (132ms) [Parameters=[:userId_0='?' (DbType = Int32), :entity_OperationId_1='?' (DbType = Int32), :entity_Date_2='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='0']
+SELECT SUM("w"."CASH_VALUE")
+FROM "BOOK_155" "w"
+WHERE ((("w"."FROM_CASHIER_ID" <> :userId_0) AND ("w"."TO_CASHIER_ID" = :userId_0)) AND ("w"."OPERATION_ID" = :entity_OperationId_1)) AND ("w"."DATE" = :entity_Date_2)
+2020-12-09 14:51:52.892 +05:00 [INF] Executed DbCommand (93ms) [Parameters=[:p0='?' (DbType = Int32), :p1='?' (DbType = Byte), :p2='?' (DbType = Double), :p3='?' (DbType = Int32), :p4='?' (DbType = Date), :p5='?' (DbType = Byte), :p6='?' (DbType = Int32), :p7='?' (DbType = Int32), :p8='?' (DbType = Int32), :p9='?' (DbType = Int32), :p10='?' (DbType = DateTime), :p11='?' (DbType = Int32), :p12='?' (Size = 2000)], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+
+INSERT INTO "BOOK_155" ("ID", "ACCEPT", "CASH_VALUE", "COUNTER_CASHIER_ID", "DATE", "FROM_175", "FROM_CASHIER_ID", "OPERATION_ID", "OTHER_INOUT_ID", "SPR_OBJECT_ID", "SYSTEM_DATE", "TO_CASHIER_ID", "WORTH_ACCOUNT")
+VALUES (:p0, :p1, :p2, :p3, :p4, :p5, :p6, :p7, :p8, :p9, :p10, :p11, :p12);
+END;
+2020-12-09 14:51:54.245 +05:00 [INF] Executed DbCommand (35ms) [Parameters=[:p0='?' (DbType = Int32), :p1='?' (DbType = Int32), :p2='?' (DbType = Int32), :p3='?' (DbType = DateTime), :p4='?' (DbType = Int32), :p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+
+INSERT INTO "EVENT_HISTORY" ("ID", "BANK_KOD", "MODULE_ID", "SYSTEM_DATE", "EVENT_TYPE", "USER_ID")
+VALUES (:p0, :p1, :p2, :p3, :p4, :p5);
+END;
+2020-12-09 14:51:57.866 +05:00 [INF] Executed action method CashOperationsApi.Controllers.Book155Controller.Add (CashOperationsApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 41349.7798ms.
+2020-12-09 14:51:58.251 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2020-12-09 14:51:58.442 +05:00 [INF] Executed action CashOperationsApi.Controllers.Book155Controller.Add (CashOperationsApi) in 56656.0487ms
+2020-12-09 14:51:58.682 +05:00 [INF] Request finished in 63039.7248ms 200 application/json; charset=utf-8
+2020-12-09 14:52:36.860 +05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:6053/api/Book155/Update application/json 166
+2020-12-09 14:52:37.232 +05:00 [INF] CORS policy execution successful.
+2020-12-09 14:52:37.462 +05:00 [INF] Successfully validated the token.
+2020-12-09 14:52:37.645 +05:00 [INF] Route matched with {action = "Update", controller = "Book155"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Update(Entitys.ViewModels.CashOperation.Book155.Book155PutViewModel) on controller CashOperationsApi.Controllers.Book155Controller (CashOperationsApi).
+2020-12-09 14:52:38.405 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies 
+2020-12-09 14:52:38.929 +05:00 [INF] Executing action method CashOperationsApi.Controllers.Book155Controller.Update (CashOperationsApi) - Validation state: "Valid"
+2020-12-09 14:52:42.356 +05:00 [INF] Executed DbCommand (490ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select GET_WORKING_DATE(837) as result from dual
+2020-12-09 14:52:48.161 +05:00 [INF] Executed DbCommand (104ms) [Parameters=[:model_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "f"."ID", "f"."ACCEPT", "f"."CASH_VALUE", "f"."COUNTER_CASHIER_ID", "f"."DATE", "f"."FROM_175", "f"."FROM_CASHIER_ID", "f"."OPERATION_ID", "f"."OTHER_INOUT_ID", "f"."SPR_OBJECT_ID", "f"."SYSTEM_DATE", "f"."TO_CASHIER_ID", "f"."WORTH_ACCOUNT"
+FROM "BOOK_155" "f"
+WHERE "f"."ID" = :model_Id_0
+2020-12-09 14:52:55.447 +05:00 [INF] Executed DbCommand (75ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT "b"."ID", "b"."ACCEPT", "b"."CASH_VALUE", "b"."COUNTER_CASHIER_ID", "b"."DATE", "b"."FROM_175", "b"."FROM_CASHIER_ID", "b"."OPERATION_ID", "b"."OTHER_INOUT_ID", "b"."SPR_OBJECT_ID", "b"."SYSTEM_DATE", "b"."TO_CASHIER_ID", "b"."WORTH_ACCOUNT"
+FROM "BOOK_155" "b"
+2020-12-09 14:53:03.469 +05:00 [INF] Executed action method CashOperationsApi.Controllers.Book155Controller.Update (CashOperationsApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 24361.5747ms.
+2020-12-09 14:53:03.811 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2020-12-09 14:53:03.815 +05:00 [INF] Executed action CashOperationsApi.Controllers.Book155Controller.Update (CashOperationsApi) in 25784.4387ms
+2020-12-09 14:53:03.818 +05:00 [INF] Request finished in 26957.7584ms 404 application/json; charset=utf-8
+2020-12-09 14:53:14.690 +05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:6053/api/Book155/Update application/json 169
+2020-12-09 14:53:14.870 +05:00 [INF] CORS policy execution successful.
+2020-12-09 14:53:14.878 +05:00 [INF] Successfully validated the token.
+2020-12-09 14:53:15.079 +05:00 [INF] Route matched with {action = "Update", controller = "Book155"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Update(Entitys.ViewModels.CashOperation.Book155.Book155PutViewModel) on controller CashOperationsApi.Controllers.Book155Controller (CashOperationsApi).
+2020-12-09 14:53:15.491 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies 
+2020-12-09 14:53:15.890 +05:00 [INF] Executing action method CashOperationsApi.Controllers.Book155Controller.Update (CashOperationsApi) - Validation state: "Valid"
+2020-12-09 14:53:17.861 +05:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select GET_WORKING_DATE(837) as result from dual
+2020-12-09 14:53:22.908 +05:00 [INF] Executed DbCommand (58ms) [Parameters=[:model_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "f"."ID", "f"."ACCEPT", "f"."CASH_VALUE", "f"."COUNTER_CASHIER_ID", "f"."DATE", "f"."FROM_175", "f"."FROM_CASHIER_ID", "f"."OPERATION_ID", "f"."OTHER_INOUT_ID", "f"."SPR_OBJECT_ID", "f"."SYSTEM_DATE", "f"."TO_CASHIER_ID", "f"."WORTH_ACCOUNT"
+FROM "BOOK_155" "f"
+WHERE "f"."ID" = :model_Id_0
+2020-12-09 14:53:44.124 +05:00 [INF] Executed DbCommand (100ms) [Parameters=[:userId_0='?' (DbType = Int32), :entity_OperationId_1='?' (DbType = Int32), :entity_Date_2='?' (DbType = Date), :entity_Id_3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT SUM("w"."CASH_VALUE")
+FROM "BOOK_155" "w"
+WHERE ((((("w"."FROM_CASHIER_ID" <> :userId_0) AND ("w"."TO_CASHIER_ID" = :userId_0)) AND ("w"."OPERATION_ID" = :entity_OperationId_1)) AND ("w"."DATE" = :entity_Date_2)) AND ("w"."ID" <> :entity_Id_3)) AND ("w"."FROM_175" = 0)
+2020-12-09 14:53:55.135 +05:00 [INF] Executed DbCommand (69ms) [Parameters=[:p12='?' (DbType = Int32), :p0='?' (DbType = Byte), :p1='?' (DbType = Double), :p2='?' (DbType = Int32), :p3='?' (DbType = Date), :p4='?' (DbType = Byte), :p5='?' (DbType = Int32), :p6='?' (DbType = Int32), :p7='?' (DbType = Int32), :p8='?' (DbType = Int32), :p9='?' (DbType = DateTime), :p10='?' (DbType = Int32), :p11='?' (Size = 2000), cur1='?' (Direction = Output) (DbType = Object)], CommandType='"Text"', CommandTimeout='0']
+DECLARE
+v_RowCount INTEGER;
+BEGIN
+UPDATE "BOOK_155" SET "ACCEPT" = :p0, "CASH_VALUE" = :p1, "COUNTER_CASHIER_ID" = :p2, "DATE" = :p3, "FROM_175" = :p4, "FROM_CASHIER_ID" = :p5, "OPERATION_ID" = :p6, "OTHER_INOUT_ID" = :p7, "SPR_OBJECT_ID" = :p8, "SYSTEM_DATE" = :p9, "TO_CASHIER_ID" = :p10, "WORTH_ACCOUNT" = :p11
+WHERE "ID" = :p12;
+v_RowCount := SQL%ROWCOUNT;
+OPEN :cur1 FOR SELECT v_RowCount FROM DUAL;
+
+END;
+2020-12-09 14:54:02.390 +05:00 [INF] Executed DbCommand (77ms) [Parameters=[:p0='?' (DbType = Int32), :p1='?' (DbType = Int32), :p2='?' (DbType = Int32), :p3='?' (DbType = DateTime), :p4='?' (DbType = Int32), :p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+
+INSERT INTO "EVENT_HISTORY" ("ID", "BANK_KOD", "MODULE_ID", "SYSTEM_DATE", "EVENT_TYPE", "USER_ID")
+VALUES (:p0, :p1, :p2, :p3, :p4, :p5);
+END;
+2020-12-09 14:54:08.280 +05:00 [INF] Executed action method CashOperationsApi.Controllers.Book155Controller.Update (CashOperationsApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 52387.459ms.
+2020-12-09 14:54:08.574 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2020-12-09 14:54:08.654 +05:00 [INF] Executed action CashOperationsApi.Controllers.Book155Controller.Update (CashOperationsApi) in 53181.5786ms
+2020-12-09 14:54:08.841 +05:00 [INF] Request finished in 54150.8622ms 200 application/json; charset=utf-8
+2020-12-09 15:04:51.911 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Book155/Add application/json 171
+2020-12-09 15:04:52.115 +05:00 [INF] CORS policy execution successful.
+2020-12-09 15:04:52.289 +05:00 [INF] Successfully validated the token.
+2020-12-09 15:04:52.676 +05:00 [INF] Route matched with {action = "Add", controller = "Book155"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Add(Entitys.PostModels.CashOperations.Book155Model) on controller CashOperationsApi.Controllers.Book155Controller (CashOperationsApi).
+2020-12-09 15:04:52.694 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies 
+2020-12-09 15:04:52.756 +05:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-12-09 15:04:52.986 +05:00 [INF] Executed action CashOperationsApi.Controllers.Book155Controller.Add (CashOperationsApi) in 293.9484ms
+2020-12-09 15:04:53.436 +05:00 [INF] Request finished in 1525.3526ms 400 application/problem+json; charset=utf-8
+2020-12-09 15:05:30.181 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Book155/Add application/json 171
+2020-12-09 15:05:30.214 +05:00 [INF] CORS policy execution successful.
+2020-12-09 15:05:30.217 +05:00 [INF] Successfully validated the token.
+2020-12-09 15:05:30.423 +05:00 [INF] Route matched with {action = "Add", controller = "Book155"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Add(Entitys.PostModels.CashOperations.Book155Model) on controller CashOperationsApi.Controllers.Book155Controller (CashOperationsApi).
+2020-12-09 15:05:30.428 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies 
+2020-12-09 15:05:30.624 +05:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2020-12-09 15:05:30.636 +05:00 [INF] Executed action CashOperationsApi.Controllers.Book155Controller.Add (CashOperationsApi) in 208.831ms
+2020-12-09 15:05:30.833 +05:00 [INF] Request finished in 651.6665ms 400 application/problem+json; charset=utf-8
+2020-12-09 15:05:49.130 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Book155/Add application/json 139
+2020-12-09 15:05:49.217 +05:00 [INF] CORS policy execution successful.
+2020-12-09 15:05:49.438 +05:00 [INF] Successfully validated the token.
+2020-12-09 15:05:49.650 +05:00 [INF] Route matched with {action = "Add", controller = "Book155"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Add(Entitys.PostModels.CashOperations.Book155Model) on controller CashOperationsApi.Controllers.Book155Controller (CashOperationsApi).
+2020-12-09 15:05:50.027 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies 
+2020-12-09 15:05:50.611 +05:00 [INF] Executing action method CashOperationsApi.Controllers.Book155Controller.Add (CashOperationsApi) - Validation state: "Valid"
+2020-12-09 15:05:54.133 +05:00 [INF] Executed DbCommand (121ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select GET_WORKING_DATE(837) as result from dual
+2020-12-09 15:05:57.596 +05:00 [ERR] 2020-12-09 15:05:57.594591 ThreadID:14  (ERROR)   OracleRelationalCommand.Execute() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00933: неверное завершение SQL-предложения
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+2020-12-09 15:05:57.629 +05:00 [ERR] Failed executing DbCommand (715ms) [Parameters=[:model_OtherInoutId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "o"."ID", "o"."INOUT_ID", "o"."IS_MAIN_CASHIER", "o"."NAME"
+FROM "OTHER_INOUT" "o"
+WHERE "o"."ID" = :model_OtherInoutId_0
+FETCH FIRST 1 ROWS ONLY
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00933: неверное завершение SQL-предложения
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+2020-12-09 15:05:57.652 +05:00 [ERR] 2020-12-09 15:05:57.652623 ThreadID:14  (ERROR)   OracleRelationalCommand.Execute() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00933: неверное завершение SQL-предложения
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+2020-12-09 15:05:57.716 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Entitys.DB.DataContext'.
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00933: неверное завершение SQL-предложения
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00933: неверное завершение SQL-предложения
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+2020-12-09 15:05:57.748 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Entitys.DB.DataContext'.
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00933: неверное завершение SQL-предложения
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00933: неверное завершение SQL-предложения
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+2020-12-09 15:06:22.282 +05:00 [ERR] Book155Api/Add
+2020-12-09 15:06:22.441 +05:00 [INF] Executed action method CashOperationsApi.Controllers.Book155Controller.Add (CashOperationsApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 31626.0053ms.
+2020-12-09 15:06:22.994 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2020-12-09 15:06:23.066 +05:00 [INF] Executed action CashOperationsApi.Controllers.Book155Controller.Add (CashOperationsApi) in 33047.2023ms
+2020-12-09 15:06:23.417 +05:00 [INF] Request finished in 34287.316ms 400 application/json; charset=utf-8
+2020-12-09 15:06:27.628 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Book155/Add application/json 139
+2020-12-09 15:06:27.803 +05:00 [INF] CORS policy execution successful.
+2020-12-09 15:06:27.984 +05:00 [INF] Successfully validated the token.
+2020-12-09 15:06:28.193 +05:00 [INF] Route matched with {action = "Add", controller = "Book155"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Add(Entitys.PostModels.CashOperations.Book155Model) on controller CashOperationsApi.Controllers.Book155Controller (CashOperationsApi).
+2020-12-09 15:06:28.584 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies 
+2020-12-09 15:06:29.048 +05:00 [INF] Executing action method CashOperationsApi.Controllers.Book155Controller.Add (CashOperationsApi) - Validation state: "Valid"
+2020-12-09 15:06:31.884 +05:00 [INF] Executed DbCommand (81ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select GET_WORKING_DATE(837) as result from dual
+2020-12-09 15:06:51.470 +05:00 [ERR] 2020-12-09 15:06:51.470900 ThreadID:14  (ERROR)   OracleRelationalCommand.Execute() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00933: неверное завершение SQL-предложения
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+2020-12-09 15:06:51.476 +05:00 [ERR] Failed executing DbCommand (188ms) [Parameters=[:model_OtherInoutId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "o"."ID", "o"."INOUT_ID", "o"."IS_MAIN_CASHIER", "o"."NAME"
+FROM "OTHER_INOUT" "o"
+WHERE "o"."ID" = :model_OtherInoutId_0
+FETCH FIRST 1 ROWS ONLY
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00933: неверное завершение SQL-предложения
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+2020-12-09 15:06:51.486 +05:00 [ERR] 2020-12-09 15:06:51.486451 ThreadID:14  (ERROR)   OracleRelationalCommand.Execute() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00933: неверное завершение SQL-предложения
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+2020-12-09 15:06:51.564 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Entitys.DB.DataContext'.
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00933: неверное завершение SQL-предложения
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00933: неверное завершение SQL-предложения
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+2020-12-09 15:06:51.585 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Entitys.DB.DataContext'.
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00933: неверное завершение SQL-предложения
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00933: неверное завершение SQL-предложения
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+2020-12-09 15:06:55.775 +05:00 [ERR] Book155Api/Add
+2020-12-09 15:06:55.874 +05:00 [INF] Executed action method CashOperationsApi.Controllers.Book155Controller.Add (CashOperationsApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 26489.1563ms.
+2020-12-09 15:06:56.264 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2020-12-09 15:06:56.490 +05:00 [INF] Executed action CashOperationsApi.Controllers.Book155Controller.Add (CashOperationsApi) in 27911.3416ms
+2020-12-09 15:06:56.854 +05:00 [INF] Request finished in 29225.4744ms 400 application/json; charset=utf-8
+2020-12-09 15:07:03.237 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Book155/Add application/json 139
+2020-12-09 15:07:03.407 +05:00 [INF] CORS policy execution successful.
+2020-12-09 15:07:03.639 +05:00 [INF] Successfully validated the token.
+2020-12-09 15:07:03.824 +05:00 [INF] Route matched with {action = "Add", controller = "Book155"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Add(Entitys.PostModels.CashOperations.Book155Model) on controller CashOperationsApi.Controllers.Book155Controller (CashOperationsApi).
+2020-12-09 15:07:04.235 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies 
+2020-12-09 15:07:04.692 +05:00 [INF] Executing action method CashOperationsApi.Controllers.Book155Controller.Add (CashOperationsApi) - Validation state: "Valid"
+2020-12-09 15:07:08.102 +05:00 [INF] Executed DbCommand (78ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select GET_WORKING_DATE(837) as result from dual
+2020-12-09 15:07:24.629 +05:00 [INF] Executed DbCommand (84ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT "o"."ID", "o"."INOUT_ID", "o"."IS_MAIN_CASHIER", "o"."NAME"
+FROM "OTHER_INOUT" "o"
+2020-12-09 15:07:49.400 +05:00 [INF] Executed DbCommand (79ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT "o"."ID", "o"."INOUT_ID", "o"."IS_MAIN_CASHIER", "o"."NAME"
+FROM "OTHER_INOUT" "o"
+2020-12-09 15:08:01.347 +05:00 [ERR] 2020-12-09 15:08:01.347463 ThreadID:14  (ERROR)   OracleRelationalCommand.Execute() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00933: неверное завершение SQL-предложения
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+2020-12-09 15:08:01.352 +05:00 [ERR] Failed executing DbCommand (115ms) [Parameters=[:model_OtherInoutId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "o"."ID", "o"."INOUT_ID", "o"."IS_MAIN_CASHIER", "o"."NAME"
+FROM "OTHER_INOUT" "o"
+WHERE "o"."ID" = :model_OtherInoutId_0
+FETCH FIRST 1 ROWS ONLY
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00933: неверное завершение SQL-предложения
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+2020-12-09 15:08:01.367 +05:00 [ERR] 2020-12-09 15:08:01.367561 ThreadID:14  (ERROR)   OracleRelationalCommand.Execute() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00933: неверное завершение SQL-предложения
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+2020-12-09 15:08:01.436 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Entitys.DB.DataContext'.
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00933: неверное завершение SQL-предложения
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00933: неверное завершение SQL-предложения
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+2020-12-09 15:08:01.492 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Entitys.DB.DataContext'.
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00933: неверное завершение SQL-предложения
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00933: неверное завершение SQL-предложения
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Int64& internalInitialLOBFS, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, IEnumerable`1 adrianParsedStmt, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleRelationalCommandBuilderFactory.OracleRelationalCommandBuilder.OracleRelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+2020-12-09 15:10:54.591 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-12-09 15:14:51.580 +05:00 [INF] User profile is available. Using 'C:\Users\Mansur\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-12-09 15:15:04.401 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:6053/api/Book155/Add application/json 139
+2020-12-09 15:15:04.614 +05:00 [INF] CORS policy execution successful.
+2020-12-09 15:15:07.679 +05:00 [INF] Successfully validated the token.
+2020-12-09 15:15:09.501 +05:00 [INF] Route matched with {action = "Add", controller = "Book155"}. Executing controller action with signature AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData Add(Entitys.PostModels.CashOperations.Book155Model) on controller CashOperationsApi.Controllers.Book155Controller (CashOperationsApi).
+2020-12-09 15:15:25.003 +05:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'DataContext' using provider 'Oracle.EntityFrameworkCore' with options: using lazy-loading proxies OracleSQLCompatibility=11 
+2020-12-09 15:15:37.028 +05:00 [INF] Executed DbCommand (266ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+select GET_WORKING_DATE(837) as result from dual
+2020-12-09 15:15:52.061 +05:00 [INF] Executed DbCommand (104ms) [Parameters=[:model_OtherInoutId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "o"."ID", "o"."INOUT_ID", "o"."IS_MAIN_CASHIER", "o"."NAME"
+FROM "OTHER_INOUT" "o"
+WHERE ("o"."ID" = :model_OtherInoutId_0)
+and rownum <= 1
+2020-12-09 15:15:57.582 +05:00 [INF] Executed DbCommand (47ms) [Parameters=[:p0='?' (DbType = Int32), :p1='?' (DbType = Byte), :p2='?' (DbType = Double), :p3='?' (DbType = Int32), :p4='?' (DbType = Date), :p5='?' (DbType = Byte), :p6='?' (DbType = Int32), :p7='?' (DbType = Int32), :p8='?' (DbType = Int32), :p9='?' (DbType = Int32), :p10='?' (DbType = DateTime), :p11='?' (DbType = Int32), :p12='?' (Size = 2000)], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+
+INSERT INTO "BOOK_155" ("ID", "ACCEPT", "CASH_VALUE", "COUNTER_CASHIER_ID", "DATE", "FROM_175", "FROM_CASHIER_ID", "OPERATION_ID", "OTHER_INOUT_ID", "SPR_OBJECT_ID", "SYSTEM_DATE", "TO_CASHIER_ID", "WORTH_ACCOUNT")
+VALUES (:p0, :p1, :p2, :p3, :p4, :p5, :p6, :p7, :p8, :p9, :p10, :p11, :p12);
+END;
+2020-12-09 15:15:57.721 +05:00 [INF] Executed DbCommand (40ms) [Parameters=[:p0='?' (DbType = Int32), :p1='?' (DbType = Int32), :p2='?' (DbType = Int32), :p3='?' (DbType = DateTime), :p4='?' (DbType = Int32), :p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+
+INSERT INTO "EVENT_HISTORY" ("ID", "BANK_KOD", "MODULE_ID", "SYSTEM_DATE", "EVENT_TYPE", "USER_ID")
+VALUES (:p0, :p1, :p2, :p3, :p4, :p5);
+END;
+2020-12-09 15:15:57.814 +05:00 [INF] Executing ObjectResult, writing value of type 'AvastInfrastructureRepository.ResponseCoreData.Response.ResponseCoreData'.
+2020-12-09 15:15:57.887 +05:00 [INF] Executed action CashOperationsApi.Controllers.Book155Controller.Add (CashOperationsApi) in 48172.739ms
+2020-12-09 15:15:58.107 +05:00 [INF] Request finished in 53710.7435ms 200 application/json; charset=utf-8
